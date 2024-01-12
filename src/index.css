@@ -3,16 +3,33 @@
 @tailwind utilities;
 
 
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Orbitron';
+  src:  url(./fonts/Orbitron-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+/* Import the Montserrat font */
+@font-face {
+  font-family: 'Montserrat';
+  src:  url(./fonts/Montserrat-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./fonts/Montserrat-SemiBold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Use Montserrat and Orbitron fonts in your styles */
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}

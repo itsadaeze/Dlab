@@ -3,10 +3,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1 class="text-green-800">
+    <div >
+      <h1 className="font-orbitron bg-red-700">
        Hello world!
      </h1>
+     <h3 className='font-monteserrat'>agency</h3>
     </div>
   );
 }
