@@ -1,13 +1,15 @@
 
 import './App.css';
+import Navbar from './components/Navbar';
+import Carrousel from './components/carrousel';
+import HeroSection from './components/herosection';
 
 function App() {
   return (
     <div >
-      <h1 className="font-orbitron bg-red-700">
-       Hello world!
-     </h1>
-     <h3 className='font-monteserrat'>agency</h3>
+      <Navbar/>
+      <HeroSection />
+      <Carrousel/>
     </div>
   );
 }
