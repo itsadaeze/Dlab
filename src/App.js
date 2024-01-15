@@ -2,8 +2,11 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/about';
+import ClientFeedback from './components/clientfeedback';
+import FAQ from './components/faq';
 // import Carrousel from './components/carrousel';
 import HeroSection from './components/herosection';
+import Project from './components/project';
 // import caro1 from "./../src/images/carousel1.svg"
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
       <HeroSection />
       {/* <Carrousel gifs={gifs} /> */}
       <About />
+      <Project />
+      <ClientFeedback />
+      <FAQ />
     </div>
   );
 }

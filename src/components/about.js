@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import backgroundImage from "./../images/about-bg.svg";
 
@@ -8,7 +7,7 @@ const About = () => {
     <div
       className="flex justify-center relative text-center w-full h-full mb-[3rem] "
       style={{
-        height: "600px",
+        height: "650px",
       }}
     >
       <div
