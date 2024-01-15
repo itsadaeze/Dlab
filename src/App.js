@@ -1,6 +1,7 @@
 
 import './App.css';
 import Navbar from './components/Navbar';
+import About from './components/about';
 // import Carrousel from './components/carrousel';
 import HeroSection from './components/herosection';
 // import caro1 from "./../src/images/carousel1.svg"
@@ -19,6 +20,7 @@ function App() {
       <Navbar/>
       <HeroSection />
       {/* <Carrousel gifs={gifs} /> */}
+      <About />
     </div>
   );
 }
