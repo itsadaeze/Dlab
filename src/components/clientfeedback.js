@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import avatar from "./../images/avatar1.svg";
+import contact from "./../images/project1.png"
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const ClientFeedback = () => {
     const cardData = [
@@ -15,35 +17,35 @@ const ClientFeedback = () => {
           id: 2,
          
           feedback:  'DLabs did a fantastic job on our website redesign. The new design is modern, user-friendly, and effectively showcases our brand. The development team was responsive to our feedback and made the requested changes quickly. We are very satisfied with the results and highly recommend their services.',
-          title:"Daniel Onyedikachi",
-          description:"Founder Literah"
+          title:"Nuel",
+          description:"Founder Caspade"
         },
     
         {
             id: 3,
           
-            feedback: "We hired Dlabs to create a custom mobile app for our business. The design team came up with a sleek and intuitive interface, and the development team ensured that the app was stable and bug-free. The project was completed on time and within budget. We are thrilled with the final product and appreciate the agency's professionalism throughout the process.",
-            title:"Daniel Onyedikachi",
-            description:"Founder Literah"
+            feedback: "We hired Dlabs to create a custom mobile app for our business. The design team came up with a sleek and intuitive interface, and the development team ensured that the app was stable and bug-free. The project was completed on time and within budget. ",
+            title:"Vihaan Zahir",
+            description:"Founder Rikal DAO"
           },
          
         
       ];
     return(
-        <div>
-        <h1 className="text-[#333] text-[3rem] font-orbitron px-[5rem] tracking-wide font-light">Clients <span className="text-[#8D1DE5]">Feedback</span></h1>
+        <div className="bg-[#F2F2F2] h-[120vh]">
+        <h1 className="text-[#333] text-[3rem] font-orbitron px-[5rem] py-[3rem] tracking-wide font-light">Clients <span className="text-[#8D1DE5]">Feedback</span></h1>
 
         <div className="flex justify-center items-center  ">
-        <div className="grid  grid-cols-1 md:grid-cols-3 gap-4 mt- ">
+        <div className="grid  grid-cols-1 md:grid-cols-3 gap-4 ">
           {cardData.map((card) => (
             <div className="max-w-sm  overflow-hidden bg-white rounded-md shadow-lg">
             
-              <div className="px-6 py-2">
+              <div className="px-6 py-4">
                
                 <p className="text-gray-700 text-base text-left">{card.feedback}</p>
                 
               </div>
-              <div className="flex flex-row items-center px-5  mb-5">
+              <div className="flex flex-row items-center px-5  mb-5 space-x-2">
                 <div>
                   <img src={avatar} alt="avatar" />
                 </div>
@@ -54,6 +56,18 @@ const ClientFeedback = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div>
+           
+        </div>
+      </div>
+      <div className="flex flex-row items-center justify-center  mx-auto px-[9rem]  py-[3rem] space-x-7">
+        <div>
+          <img src={contact} alt="contact" className="w-[100rem]"/>
+        </div>
+        <div className="">
+          <h1 className="font-orbitron text-[2.5rem] w-[80%] ">We bridge the gap between <span className="text-[#8D1DE5]">idea</span> and market with innovative designs <span className="text-[#8D1DE5]">seamless functionality </span></h1>
+          <button className="bg-[#8D1DE5]  text-[#FFFFFF] px-6 py-2 rounded-full text-md  mt-5 flex flex-row items-center gap-1 ">Contact Us <span><IoIosArrowRoundForward /></span></button>
         </div>
       </div>
         </div>

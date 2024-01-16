@@ -9,6 +9,7 @@ import Form from './components/form';
 // import Carrousel from './components/carrousel';
 import HeroSection from './components/herosection';
 import Project from './components/project';
+import Subscribe from './components/subscribe';
 // import caro1 from "./../src/images/carousel1.svg"
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <ClientFeedback />
       <FAQ />
       <Form />
+      <Subscribe/>
       <Footer/>
     </div>
   );
