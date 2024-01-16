@@ -59,7 +59,7 @@ const FAQ = () => {
 
 <h1 className="text-[#333] text-[2rem] font-orbitron px-[5rem] mt-[3rem] tracking-wide font-light">Frequently Asked <span className="text-[#8D1DE5]">Questions</span></h1>
    
-    <div className="max-w-screen-lg mx-auto mt-8 mb-[3rem]">
+    <div className="max-w-screen-lg mx-auto mt-10 mb-[3rem]">
 
 
 
@@ -73,9 +73,9 @@ const FAQ = () => {
             <div className="text-gray-500">{activeIndex === index ? <IoIosArrowRoundUp />: < IoIosArrowRoundDown />}</div>
           </div>
           {activeIndex === index && (
-            <div className=" p-2  rounded-md">{faq.answer}</div>
+            <div className=" p-2  text-[#333] font-montserrat w-[90%]">{faq.answer}</div>
           )}
-            <hr  className='mt-2'/>
+            <hr  className='mt-2 bg-[#BDBDBD]'/>
         </div>
        
       ))}

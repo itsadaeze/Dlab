@@ -5,6 +5,7 @@ import About from './components/about';
 import ClientFeedback from './components/clientfeedback';
 import FAQ from './components/faq';
 import Footer from './components/footer';
+import Form from './components/form';
 // import Carrousel from './components/carrousel';
 import HeroSection from './components/herosection';
 import Project from './components/project';
@@ -28,6 +29,7 @@ function App() {
       <Project />
       <ClientFeedback />
       <FAQ />
+      <Form />
       <Footer/>
     </div>
   );
