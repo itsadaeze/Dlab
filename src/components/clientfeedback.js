@@ -34,7 +34,7 @@ const ClientFeedback = () => {
         <h1 className="text-[#333] text-[3rem] font-orbitron px-[5rem] tracking-wide font-light">Clients <span className="text-[#8D1DE5]">Feedback</span></h1>
 
         <div className="flex justify-center items-center  ">
-        <div className="grid  grid-cols-1 md:grid-cols-3 gap-4 mt-7 ">
+        <div className="grid  grid-cols-1 md:grid-cols-3 gap-4 mt- ">
           {cardData.map((card) => (
             <div className="max-w-sm  overflow-hidden bg-white rounded-md shadow-lg">
             
