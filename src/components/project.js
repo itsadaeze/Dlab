@@ -15,23 +15,23 @@ const Project = () => {
 
   return (
     <div
-    className="relative  bg-[#000101]  h-[125vh] text-white mt-[-3rem]"
+    className="relative  bg-[#000101]  h-[180vh] text-white mt-[-3rem] md:h-[115vh]"
  
   >
     <div className=" bg-cover bg-center absolute bg-opacity-100 "
        style={{
          backgroundImage: `url(${backgroundImage})`,
-         height: "900px", 
+         height: "950px", 
          width:"100%"
        }}
        >
-    <div className="grid grid-cols-2 gap-4 mx-auto max-w-screen-md  mt-[6rem] "
+    <div className="grid grid-cols-1 gap-4 mx-auto max-w-screen-md  mt-[3rem] md:grid-cols-2 md:mt-[6rem]"
   >
       {cardData.map((card) => (
         <div key={card.id} className="max-w-sm">
-          <img src={card.imageSrc} alt="Card" className="mb-4 w-full object-cover rounded-md" />
-          <p className="text-[#F2F2F2]">{card.text}</p>
-          <p className="text-[#E0E0E0] text-[10px]">{card.description}</p>
+          <img src={card.imageSrc} alt="Card" className="mb-4 w-[100%] px-6 object-cover rounded-md md:w-full md:px-0" />
+          <p className="text-[#F2F2F2] px-[1.5rem] md:px-0">{card.text}</p>
+          <p className="text-[#E0E0E0] px-[1.5rem] md:px-0 text-[9px] md:text-sm">{card.description}</p>
         </div>
       ))}
     </div>

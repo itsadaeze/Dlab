@@ -7,71 +7,71 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-[#8F04FC] py-[3.6rem] ">
-      <div className="flex flex-row justify-around items-center ">
-        <div className="flex flex-col  space-y-2 w-[30%] ml-[3rem]  ">
-          <div className="text-2xl text-[#FFF] flex flex-row items-center font-montserrat font-bold mb-[2rem]">
+      <div className="flex flex-col justify-around items-center md:flex-row ">
+        <div className="flex flex-col  space-y-2 w-full ml-0 md:ml-[3rem] md:w-[30%] ">
+          <div className="text-2xl text-[#FFF] px-6 flex flex-row items-center font-montserrat font-bold mb-5 md:px-0 md:mb-[2rem]">
             <img src={logo} alt="logo" className="mr-2" />
             Lab
           </div>
-          <h3 className="w-full text-[#F2F2F2] leading-normal text-lg tracking-wider font-montserrat  ">
+          <h3 className="w-full text-[#F2F2F2] px-6 leading-normal text-sm tracking-wider font-montserrat md:px-0 md:text-lg">
             We craft stunning visual identities and bring them to life with
             seamless functionality, ensuring your brand stands out in the
             digital world.
           </h3>
-          <div className="flex flex-row space-x-4 text-white py-5">
+          <div className="flex flex-row space-x-4 text-white py-5 px-6 md:px-0">
             <MdFacebook />
             <FaTwitter />
             <FaLinkedin />
           </div>
         </div>
-        <div className="text-white w-[25%] mt-[-1rem] font-montserrat tracking-wide">
-          <h1 className="text-xl mb-[2rem]">Menu</h1>
+        <div className="text-white w-full px-6 mt-[2rem] font-montserrat tracking-wide md:w-[25%] md:px-0 md:mt-[-1rem]">
+          <h1 className="text-xl mb-[1rem] font-bold md:mb-[2rem]">Menu</h1>
           <div>
-            <a href="www.facebook.com" className="block mb-4">
+            <a href="www.facebook.com" className="block mb-4 text-sm md:text-lg">
               About
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-4">
+            <a href="www.facebook.com" className="block mb-4 text-sm md:text-lg">
               Services
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-4">
+            <a href="www.facebook.com" className="block mb-4 text-sm md:text-lg">
               Case Study
             </a>
           </div>
-          <p className="text-sm"> &copy; DLabs Professional Services. All Rights Reserved</p>
+          <p className="text-[11px] md:text-sm"> &copy; DLabs Professional Services. All Rights Reserved</p>
         </div>
-        <div className="text-white w-[25%] font-montserrat tracking-wide">
-          <h1 className="text-xl  mb-[2rem]">Services</h1>
+        <div className="text-white w-full px-6 font-montserrat mt-[2rem] tracking-wide md:w-[25%] md:px-0  md:mt-0">
+          <h1 className="text-xl  mb-[1rem] font-bold md:mb-[2rem]">Services</h1>
           <div >
-            <a href="www.facebook.com" className="block mb-3">
+            <a href="www.facebook.com" className="block mb-3 text-sm md:text-lg">
               Product UI/UX Design
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-3">
+            <a href="www.facebook.com" className="block mb-3 text-sm md:text-lg">
               Brand Identity Design
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-3">
+            <a href="www.facebook.com" className="block mb-3 text-sm md:text-lg">
               Web Development
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-3">
+            <a href="www.facebook.com" className="block mb-3 text-sm md:text-lg">
             MVP Development
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-3">
+            <a href="www.facebook.com" className="block mb-3 text-sm md:text-lg">
             UX Auditing
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-3">
+            <a href="www.facebook.com" className="block mb-3 text-sm md:text-lg">
             No Code Design
             </a>
           </div>

@@ -28,11 +28,11 @@ const Form = () => {
 
     return(
         <div className="bg-[#F2F2F2] w-full py-[2rem]">
-                <div className="px-[5rem] py-10">
-                    <h3 className="text-[#8D1DE5]">Share your project idea with us</h3>
-                    <h1 className="font-orbitron tracking-wider text-2xl">Let’s work together..</h1>
+                <div className="px-[1rem] py-3 md:px-[5rem] md:py-10">
+                    <h3 className="text-[#8D1DE5] text-[10px] md:text-lg ">Share your project idea with us</h3>
+                    <h1 className="font-orbitron tracking-wider text-md md:text-2xl">Let’s work together..</h1>
                 </div>
-    <div className="max-w-3xl w-[80%] mx-auto ">
+    <div className="max-w-md w-full px-4 mx-auto md:w-[80%] md:max-w-3xl md:px-0">
        <form onSubmit={handleSubmit} className="mt-8 space-y-6">
             <div className="mb-2">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -44,13 +44,13 @@ const Form = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="mt-1 py-1 px-[18rem] border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500"
+                    className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:px-[18rem]"
                     required
                 />
             </div>
-           <div className="flex flex-row items-center space-x-6">
+           <div className="flex flex-col items-start space-x-0 md:flex-row md:items-center md:space-x-6 ">
                 <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                    <label htmlFor="email" className="block text-sm mt-5 font-medium text-gray-700">
                         Company Name
                     </label>
                     <input
@@ -59,13 +59,13 @@ const Form = () => {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="mt-1  py-1 px-[6rem] border-b-2 border-gray-300 bg-transparent  focus:outline-none focus:border-blue-500"
+                        className="mt-1  py-1 w-full border-b-2  border-gray-300 bg-transparent  focus:outline-none focus:border-blue-500 px-[6rem]"
                         required
                     />
                 </div>
         
-                <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <div className="mt-5 md:mt-0">
+                    <label htmlFor="email" className="block text-sm mt-5 font-medium text-gray-700">
                         Email
                     </label>
                     <input
@@ -74,14 +74,14 @@ const Form = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="mt-1  py-1 px-[6rem] border-b-2 border-gray-300 bg-transparent  focus:outline-none focus:border-blue-500"
+                        className="mt-1  py-1 w-full border-b-2 border-gray-300 bg-transparent  focus:outline-none focus:border-blue-500 px-[6rem]"
                         required
                     />
                 </div>
             </div>
-           <div className="flex flex-row items-center space-x-6">
+           <div className="flex flex-col items-center space-x-0 md:flex-row md:space-x-6">
             
-            <div>
+            <div className="mt-5 md:mt-0">
                 <label htmlFor="option" className="block text-sm font-medium text-gray-700">
                     Service required  <span className="text-[#8D1DE5]">*</span>
                 </label>
@@ -90,7 +90,7 @@ const Form = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="mt-1  py-2 px-[6.5rem] border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500"
+                    className="mt-1  py-2 px-[3rem] border-b-2  border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:[6.5rem]"
                 >
                     <option value="" disabled>Select from options</option>
                     <option value="option1">Product UIUX Design</option>
@@ -103,7 +103,7 @@ const Form = () => {
                 </select>
             </div>
        
-            <div>
+            <div className="mt-7 md:mt-0">
             <label htmlFor="option" className="block text-sm font-medium text-gray-700">
                 Project budget<span className="text-[#8D1DE5]">*</span>
             </label>
@@ -112,7 +112,7 @@ const Form = () => {
                 name="budget"
                 value={formData.budget}
                 onChange={handleChange}
-                className="mt-1 py-2 px-[6.5rem] border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500"
+                className="mt-1 py-2 px-[3rem] border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:px-[6.5rem]"
             >
                 <option value="" disabled>Range from options</option>
                 <option value="option1">$1k - $2.5k</option>
@@ -138,7 +138,7 @@ const Form = () => {
             placeholder="Tell us more about your idea"
             value={formData.project}
             onChange={handleChange}
-            className="mt-1  py-1 px-[18rem]  border-b-2 border-gray-300 bg-transparent  focus:outline-none focus:border-blue-500"
+            className="mt-1  py-1 w-full  border-b-2 border-gray-300 bg-transparent  focus:outline-none focus:border-blue-500 md:px-[18rem]"
             required
           />
         </div>
