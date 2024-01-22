@@ -52,18 +52,18 @@ const Service = () => {
   return (
     <div className="flex flex-col bg-[#060A14] ">
         <div>
-            <h1 className='text-[2.5rem] px-[5rem] text-[#FFFFFF] font-orbitron'>Our  <span className='text-[#8D1DE5]'>Services</span></h1>
+            <h1 className='text-[1.5rem] px-[1rem] text-[#FFFFFF] font-orbitron md:px-[5rem] md:text-[2.5rem]'>Our  <span className='text-[#8D1DE5]'>Services</span></h1>
         </div>
       {cardData.map((card, index) => (
         <div>
         <div
           key={index}
-          className={`mx-[2rem] my-8 py-2 px-[3.5rem] flex flex-row justify-between items-center  ${index === selectedCard ? 'border-blue-500' : 'border-gray-300'} cursor-pointer`}
+          className={`mx-[0rem] my-8 py-2 px-[0rem] flex flex-col justify-between items-center md:items-start md:flex-row md:px-[3.5rem] md:mx-[2rem]${index === selectedCard ? 'border-blue-500' : 'border-gray-300'} cursor-pointer`}
           onClick={() => handleCardClick(index)}
         >
           <h2 className="text-lg font-bold text-[#828282] font-orbitron">{card.title}</h2>
           <img src={card.image} alt={card.title} className={`mt-2 w-[10%] ${index === selectedCard ? 'block' : 'hidden'}`} />
-          <p className="mt-2 w-[40%] text-[#828282] font-montserrat">{card.description}</p>
+          <p className="mt-2 w-[40%] text-[#828282] font-montserrat ">{card.description}</p>
 
           
         </div>
@@ -79,3 +79,6 @@ const Service = () => {
 };
 
 export default Service;
+
+
+
