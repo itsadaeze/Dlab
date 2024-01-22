@@ -28,7 +28,7 @@ const Project = () => {
     <div className="grid grid-cols-1 gap-4 mx-auto max-w-screen-md  mt-[3rem] md:grid-cols-2 md:mt-[6rem]"
   >
       {cardData.map((card) => (
-        <div key={card.id} className="max-w-sm">
+        <div key={card.id} className="max-w-md">
           <img src={card.imageSrc} alt="Card" className="mb-4 w-[100%] px-6 object-cover rounded-md md:w-full md:px-0" />
           <p className="text-[#F2F2F2] px-[1.5rem] md:px-0">{card.text}</p>
           <p className="text-[#E0E0E0] px-[1.5rem] md:px-0 text-[9px] md:text-sm">{card.description}</p>

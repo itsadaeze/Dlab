@@ -68,9 +68,9 @@ const Navbar = () => {
               <a href="www.facebook.com"  className='hidden lg:inline-block'>Case Study</a>
               </div>
                    {/* Sign Up and Login Buttons */}
-             {/* <div className="space-x-4   ">
+             <div className="space-x-4   ">
                 <button className=" bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md  flex flex-row items-center gap-1">Contact Us <span><IoIosArrowRoundForward /></span></button>
-              </div> */}
+              </div>
             </>
               )}
       </div>

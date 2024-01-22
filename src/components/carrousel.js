@@ -1,85 +1,54 @@
 
-// import React, { useState, useEffect } from 'react';
-// import backgroundImage from "./../images/hero-bg.svg";
-
-// const Carrousel = ({ gifs }) => {
-//   const [translateValue, setTranslateValue] = useState(0);
-
-//   useEffect(() => {
-//     const intervalId = setInterval(() => {
-//       setTranslateValue((prevValue) => (prevValue - 100) % (gifs.length * 100));
-//     }, 3000); 
-
-//     return () => clearInterval(intervalId);
-//   }, [gifs]);
-
-//   return (
-  
-//         <div
-//         className="relative h-64 overflow-hidden bg-cover bg-center  bg-opacity-100 "
-//         style={{
-//           backgroundImage: `url(${backgroundImage})`,
-//           height: "400px", 
-          
-//         }}
-//       >
-//       <div
-//         className="flex transition-transform duration-500 ease-in-out"
-//         style={{ transform: `translateX(${translateValue}%)` }}
-//       >
-//         {gifs.map((gif, index) => (
-//           <img
-//             key={index}
-//             src={gif}
-//             alt={`GIF ${index}`}
-//             className="w-full h-full object-cover"
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Carrousel;
-
 
 import React, { useState, useEffect } from 'react';
-import backgroundImage from "./../images/hero-bg.svg";
 
-const Carrousel = ({ gifs }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+const Carousel = ({ items }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % gifs.length);
-    }, 3000);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+    }, 2000);
 
     return () => clearInterval(intervalId);
-  }, [gifs]);
+  }, [currentIndex, items.length]);
+
+  const containerStyle = {
+    display: 'flex',
+   padding: "1rem",
+   height: "auto",
+    width: '400%',
+  };
+
+  const trackStyle = {
+    display: 'flex',
+    gap:"2rem",
+    transition: 'transform 0.5s ease-in-out',
+    transform: `translateX(-${currentIndex * (100 / items.length)}%)`,
+  };
+
+  const itemStyle = {
+    flex: `0 0 ${100 / items.length}%`,
+  };
 
   return (
-    <div
-      className="relative h-64 overflow-hidden bg-cover bg-center bg-opacity-100"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        height: "400px",
-      }}
-    >
-      <div
-        className="flex transition-transform duration-500 ease-in-out"
-        style={{ transform: `translateX(${-currentImageIndex * 100}%)` }}
-      >
-        {gifs.map((gif, index) => (
-          <img
-            key={index}
-            src={gif}
-            alt={`GIF ${index}`}
-            className="w-full h-full object-cover"
-          />
+    <div style={containerStyle}>
+      <div style={trackStyle}>
+        {items.map((item, index) => (
+          <div key={index} style={itemStyle}>
+            {item.type === 'image' && (
+              <img src={item.src} alt={item.alt} style={{ width: '100%', height: 'auto' }} />
+            )}
+
+            {item.type === 'gif' && (
+              <img src={item.src} alt={item.alt} style={{ width: '100%', height: 'auto' }} />
+            )}
+          </div>
         ))}
       </div>
     </div>
   );
 };
 
-export default Carrousel;
+export default Carousel;
+
