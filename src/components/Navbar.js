@@ -1,81 +1,114 @@
 
+
 import React, { useState } from 'react';
-import logo from "./../images/logo.svg"
-import { IoIosArrowRoundForward } from "react-icons/io";
+import logo from './../images/logo.svg';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 
+const NavBar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const [isXIcon, setIsXIcon] = useState(false);
 
-const Navbar = () => {
-
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  // const history = useHistory();
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+    setIsXIcon(!isXIcon);
   };
 
-  const handleCancel = () => {
-    setIsMobileMenuOpen(false);
-    // history.push('/');
+  const closeMenu = () => {
+    setShowMenu(false);
+    setIsXIcon(false);
   };
+
   return (
-    <nav className='bg-[#060A14] p-3 ' >
+    <div>
+    <nav className="bg-[#060A14] px-[1rem] py-4  w-full md:px-[3rem]">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div>
-        <div className=" text-2xl text-[#FFF] flex flex-row items-center">
-            <img src={logo} alt='logo' />
-            Lab</div>
-        
+        <div className="text-2xl text-[#FFF] flex flex-row items-center">
+          <img src={logo} alt="logo" />
+          Lab
         </div>
-      
-        <div className="lg:hidden">
-          <button onClick={toggleMobileMenu} className="m-0 p-0 flex items-center text-white">
-            <svg
-              className="w-6 h-6 m-0 p-0"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
+
+        <div className="hidden md:flex    space-x-[5rem] ">
+          <a href="#" className="text-white" >
+            About
+          </a>
+          <a href="#" className="text-white" >
+            Services
+          </a>
+          <a href="#" className="text-white" >
+            Case Study
+          </a>
+        </div>
+
+        <div className="hidden md:block">
+          {/* "Contact Us" button visible in desktop view */}
+          <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md flex flex-row items-center gap-1" onClick={closeMenu}>
+            Contact Us <span><IoIosArrowRoundForward /></span>
           </button>
         </div>
 
-
-        {/* Navigation Links */}
-        <div className={`space-x-[5rem] text-[#FFF] font-montserrat font-light ${isMobileMenuOpen ? 'fixed inset-0 bg-gray-800 bg-opacity-50 z-50' : 'hidden'}`}>
-        <div className={`lg:hidden fixed inset-y-0 right-0 z-50 bg-white mt-[4rem]  w-2/3 h-full p-4 transform transition-transform duration-10000 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-          <a href="www.facebook.com" className=" ">About</a>
-          <a href="www.facebook.com" >Services</a>
-          <a href="www.facebook.com" >Case Study</a>
-          <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md  flex flex-row items-center gap-1">Contact Us <span><IoIosArrowRoundForward /></span></button>
+        <div className="md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-white focus:outline-none focus:text-white"
+          >
+            {isXIcon ? (
+              // Use X icon when isXIcon is true
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              // Use menu icon when isXIcon is false
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            )}
+          </button>
         </div>
-       </div>
-      
 
-              {/* Conditional rendering for desktop view */}
-              {isMobileMenuOpen ? null : (
-            <>
-              <div className={`space-x-[5rem] text-[#FFF] font-montserrat font-light `}>
-              <a href="www.facebook.com" className="hidden lg:inline-block ">About</a>
-              <a href="www.facebook.com" className='hidden lg:inline-block' >Services</a>
-              <a href="www.facebook.com"  className='hidden lg:inline-block'>Case Study</a>
-              </div>
-                   {/* Sign Up and Login Buttons */}
-             <div className="space-x-4   ">
-                <button className=" bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md  flex flex-row items-center gap-1">Contact Us <span><IoIosArrowRoundForward /></span></button>
-              </div>
-            </>
-              )}
+        {showMenu && (
+          <div className="lg:hidden fixed flex flex-col inset-y-0 right-0 z-50 bg-[#060A14] mt-[4rem] shadow-lg  w-2/3 h-[35vh] p-4 transform transition-transform duration-10000 ease-in-out">
+            <a href="#" className="text-white py-2" onClick={closeMenu}>
+              About
+            </a>
+            <a href="#" className="text-white py-2" onClick={closeMenu}>
+              Services
+            </a>
+            <a href="#" className="text-white py-2" onClick={closeMenu}>
+              Case Study
+            </a>
+           <div className='px-1 w-[70%] mt-3'>
+            <a href="#" className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-4 py-2 rounded-full text-md flex flex-row items-center gap-1" onClick={closeMenu}>
+              Contact Us  <span><IoIosArrowRoundForward /></span>
+            </a>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
+    </div>
   );
 };
 
-export default Navbar;
+export default NavBar;

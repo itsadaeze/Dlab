@@ -1,6 +1,6 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
+import NavBar from './components/Navbar';
 import About from './components/about';
 import ClientFeedback from './components/clientfeedback';
 import FAQ from './components/faq';
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div >
-      <Navbar/>
+      <NavBar/>
       <HeroSection />
       <ImageSlider/>
   
