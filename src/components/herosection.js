@@ -7,7 +7,7 @@ import backgroundImage from "./../images/hero-bg.svg";
 const HeroSection = () => {
   return (
     <div
-      className="relative bg-[#000101] h-[50vh] text-white md:h-[55vh]"
+      className="relative bg-[#000101] h-[45vh] text-white md:h-[55vh]"
     >
       <div
         className="bg-cover bg-center absolute bg-opacity-100"

@@ -123,7 +123,7 @@ const Approach = () => {
       };
     }, []);
     return (
-      <div className="bg-[#060A14] py-8">
+      <div className="bg-[#060A14] py-8 h-[90vh] md:h-full ">
         <div className="flex flex-col justify-around mx-auto md:flex-row">
           <div>
             <h1 className="font-orbitron text-[1.5rem] w-full px-[1rem] text-[#F2F2F2] tracking-wide md:text-[2.6rem]">
