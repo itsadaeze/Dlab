@@ -32,7 +32,7 @@ const ClientFeedback = () => {
         
       ];
     return(
-        <div className="bg-[#F2F2F2] h-[210vh] md:h-[120vh]">
+        <div className="bg-[#F2F2F2] h-[200vh] md:h-[120vh]">
         <h1 className="text-[#333] text-[1.5rem] font-orbitron px-[1rem] py-[1rem] tracking-wide font-light md:text-[3rem] md:px-[5rem] md:py-[3rem]">Clients <span className="text-[#8D1DE5]">Feedback</span></h1>
 
         <div className="flex justify-center items-center overflow-auto ">
