@@ -17,7 +17,7 @@ const About = () => {
           height: "90vh"
         }}
       />
-      <div className="relative z-10 w-full mt-[3rem]  md:w-[50%]">
+      <div className="relative z-10 w-full mt-[1rem]  md:w-[50%]">
         <h1 className="font-orbitron text-[1rem]  md:text-[2.5rem]">
           User - Centric, <span className="text-[#8D1DE5]">Seamless</span> Functionality, Empowering Business,
           <span className="text-[#8D1DE5]"> Innovative</span> Approach

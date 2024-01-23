@@ -126,15 +126,15 @@ const Approach = () => {
       <div className="bg-[#060A14] py-8">
         <div className="flex flex-col justify-around mx-auto md:flex-row">
           <div>
-            <h1 className="font-orbitron text-[1rem] w-full px-[1rem] text-[#F2F2F2] tracking-wide md:text-[2.6rem]">
-              Design Approach
+            <h1 className="font-orbitron text-[1.5rem] w-full px-[1rem] text-[#F2F2F2] tracking-wide md:text-[2.6rem]">
+              Design <span className="text-[#0C07EF]">Approach</span>
             </h1>
           </div>
           <div className="w-full md:w-1/2">
-            <p className="mb-5 text-[#828282] font-montserrat">
+            <p className="mb-5 text-[#828282] text-sm mt-3 font-montserrat px-4 md:px-0 md:text-lg md:mt-0">
               Discover our design and development process - a seamless journey that transforms your vision into a stunning digital reality. From conceptualization to launch, we work closely with you to create a unique, engaging experience tailored to your brand.
             </p>
-            <div className="space-x-4">
+            <div className="space-x-4 px-5">
               <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md flex flex-row items-center gap-1">
                 Contact Us <span><IoIosArrowRoundForward /></span>
               </button>
@@ -142,7 +142,7 @@ const Approach = () => {
           </div>
         </div>
   
-        <div className="relative mt-7 bg-[#9F0FE3] py-6 m-4 w-full md:w-[90%] md:mx-auto rounded-2xl overflow-hidden md:mx-auto ">
+        <div className="relative mt-7 bg-[#9F0FE3] py-6 px-4 mx-8 w-full md:w-[90%]  rounded-2xl overflow-hidden md:mx-auto ">
         <button
           onClick={() => handleArrowClick('left')}
           className="absolute top-1/2 left-0 transform -translate-y-1/2 py-1 px-2 ml-[-1rem] bg-[#333333] rounded-full text-white"
@@ -174,7 +174,7 @@ const Approach = () => {
         </button>
 
   
-          <div className="flex items-center justify-center absolute bottom-4 left-0 right-0">
+          {/* <div className="flex items-center justify-center absolute bottom-4 left-0 right-0">
             {Array.from({ length: Math.ceil(cardsData.length / cardsPerPage) }).map((_, i) => (
               <div
                 key={i}
@@ -182,7 +182,7 @@ const Approach = () => {
                 className={`w-3 h-3 mx-2 bg-[#333333] rounded-full cursor-pointer ${i === startIndex / cardsPerPage ? 'bg-[#9F0FE3]' : ''}`}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     );

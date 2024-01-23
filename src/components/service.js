@@ -62,12 +62,12 @@ const Service = () => {
           onClick={() => handleCardClick(index)}
         >
           <h2 className="text-lg font-bold text-[#828282] font-orbitron">{card.title}</h2>
-          <img src={card.image} alt={card.title} className={`mt-2 w-[10%] ${index === selectedCard ? 'block' : 'hidden'}`} />
-          <p className="mt-2 w-[40%] text-[#828282] font-montserrat ">{card.description}</p>
+          <img src={card.image} alt={card.title} className={`mt-2 w-[30%] md:w-[10%] ${index === selectedCard ? 'block' : 'hidden'}`} />
+          <p className="mt-2 w-full text-[#828282] text-[13px] px-5 font-montserrat md:w-[40%] md:text-lg md:px-0">{card.description}</p>
 
           
         </div>
-        <div className='px-[5rem]'>
+        <div className='px-[2rem] md:px-[5rem]'>
         <hr  className='mt-2 bg-[#BDBDBD]'/>
         </div>
         
