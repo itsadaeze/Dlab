@@ -15,7 +15,7 @@ const cardsData = [
 
 const Approach = () => {
     const [startIndex, setStartIndex] = useState(0);
-    const [cardsPerPage, setCardsPerPage] = useState(1); // Default to mobile view
+    const [cardsPerPage, setCardsPerPage] = useState(1); 
   
     const handleArrowClick = (direction) => {
       const newStartIndex =
@@ -45,17 +45,17 @@ const Approach = () => {
     }, []);
     return (
       <div className="bg-[#060A14] py-8 h-[90vh] md:h-full ">
-        <div className="flex flex-col justify-around mx-auto md:flex-row">
+        <div className="flex flex-col justify-around mx-auto md:flex-row mt-6 px-3">
           <div>
-            <h1 className="font-orbitron text-[1.5rem] w-full px-[1rem] text-[#F2F2F2] tracking-wide md:text-[2.6rem]">
+            <h1 className="font-orbitron text-[24px] w-full px-4 md:px-0 text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px]">
               Design <span className="text-[#0C07EF]">Approach</span>
             </h1>
           </div>
           <div className="w-full md:w-1/2">
-            <p className="mb-5 text-[#828282] text-sm mt-3 font-montserrat px-4 md:px-0 md:text-lg md:mt-0">
+            <p className="mb-5 text-[#828282] text-[14px] mt-3 font-montserrat px-4 md:px-0 md:text-[14px] lg:text-[16px] md:mt-0 ">
               Discover our design and development process - a seamless journey that transforms your vision into a stunning digital reality. From conceptualization to launch, we work closely with you to create a unique, engaging experience tailored to your brand.
             </p>
-            <div className="space-x-4 px-5">
+            <div className="space-x-4  px-4 md:px-0">
               <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md flex flex-row items-center gap-1">
                 Contact Us <span><IoIosArrowRoundForward /></span>
               </button>
@@ -66,7 +66,7 @@ const Approach = () => {
         <div className="relative mt-7 bg-[#9F0FE3] py-6 px-2 mx-3  w-[84%] md:w-[90%]  rounded-2xl overflow-hidden md:mx-auto">
         <button
           onClick={() => handleArrowClick('left')}
-          className="absolute top-1/2 left-3 transform -translate-y-1/2 py-1 px-2 ml-[-1rem] bg-[#333333] rounded-full text-white"
+          className="absolute top-1/2 left-3  py-1 px-2 ml-[-1rem] bg-[#333333] rounded-full text-white"
         >
           {'<'}
         </button>
@@ -82,14 +82,14 @@ const Approach = () => {
                 <h3 className="text-lg font-semibold text-[#4F4F4F] font-montserrat">{card.Number}</h3>
               </div>
 
-              <p className="mt-2 text-[#BDBDBD] font-montserrat">{card.description}</p>
+              <p className="mt-2 text-[#BDBDBD] font-montserrat text-[8.3px] md:text-[8.3px] lg:text-[14px]">{card.description}</p>
             </div>
           ))}
         </div>
 
         <button
           onClick={() => handleArrowClick('right')}
-          className="absolute top-1/2 right-3 transform -translate-y-1/2 py-1 px-2 mr-[-1rem] bg-[#9F0FE3] rounded-full text-white"
+          className="absolute top-1/2 right-3  py-1 px-2 mr-[-1rem] bg-[#9F0FE3] rounded-full text-white"
         >
           {'>'}
         </button>
