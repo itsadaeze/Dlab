@@ -19,7 +19,7 @@ const NavBar = () => {
   };
 
   return (
-    <div>
+    
     <nav className="bg-[#060A14] px-[1rem] py-4  w-full md:px-[3rem]">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-2xl text-[#FFF] flex flex-row items-center">
@@ -27,7 +27,7 @@ const NavBar = () => {
           Lab
         </div>
 
-        <div className="hidden md:flex    space-x-[5rem] ">
+        <div className="hidden md:flex  space-x-[5rem] ">
           <a href="#" className="text-white" >
             About
           </a>
@@ -88,7 +88,7 @@ const NavBar = () => {
         </div>
 
         {showMenu && (
-          <div className="lg:hidden fixed flex flex-col inset-y-0 right-0 z-50 bg-[#060A14] mt-[4rem] shadow-lg  w-2/3 h-[35vh] p-4 transform transition-transform duration-10000 ease-in-out">
+          <div className="lg:hidden fixed flex flex-col inset-y-0 right-7 z-50 bg-[#060A14] mt-[4rem] shadow-lg  w-2/3 h-[35vh] p-4 transform transition-transform duration-10000 ease-in-out">
             <a href="#" className="text-white py-2" onClick={closeMenu}>
               About
             </a>
@@ -98,8 +98,8 @@ const NavBar = () => {
             <a href="#" className="text-white py-2" onClick={closeMenu}>
               Case Study
             </a>
-           <div className='px-1 w-[70%] mt-3'>
-            <a href="#" className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-4 py-2 rounded-full text-md flex flex-row items-center gap-1" onClick={closeMenu}>
+           <div className='px-1 w-[80%] mt-3'>
+            <a href="#" className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-2 py-2 rounded-full text-md flex flex-row items-center gap-1" onClick={closeMenu}>
               Contact Us  <span><IoIosArrowRoundForward /></span>
             </a>
             </div>
@@ -107,7 +107,7 @@ const NavBar = () => {
         )}
       </div>
     </nav>
-    </div>
+    
   );
 };
 
