@@ -15,7 +15,7 @@ const Project = () => {
 
   return (
     <div
-    className="relative  bg-[#000101]  h-[180vh] text-white mt-[-3rem] md:h-[170vh] lg:h-[130vh]"
+    className="relative  bg-[#000101]  h-[200vh] text-white mt-[-3rem] md:h-[170vh] lg:h-[130vh]"
  
   >
     <div className=" bg-cover bg-center absolute bg-opacity-100 "
