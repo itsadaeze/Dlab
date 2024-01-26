@@ -44,7 +44,7 @@ const Approach = () => {
       };
     }, []);
     return (
-      <div className="bg-[#060A14] py-8 h-[90vh] md:h-full  lg:h-full ">
+      <div className="bg-[#060A14]  md:h-full  lg:h-full ">
           <div className="  max-w-[1200px] mx-auto py-10">
         <div className="flex flex-col justify-around mx-auto md:flex-row mt-6 px-3 md:mt-[3rem] md:mb-8">
           <div>
