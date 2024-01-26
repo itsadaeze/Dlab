@@ -20,8 +20,9 @@ const NavBar = () => {
 
   return (
     
-    <nav className="bg-[#060A14] px-[1rem] py-4  w-full md:px-[3rem]">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-[#060A14] px-[1rem] py-4  w-full md:px-[2rem] lg:px-8">
+      <div className='max-w-[1200px] mx-auto '>
+      <div className="  flex justify-between items-center">
         <div className="text-2xl text-[#FFF] flex flex-row items-center">
           <img src={logo} alt="logo" />
           Lab
@@ -105,6 +106,7 @@ const NavBar = () => {
             </div>
           </div>
         )}
+      </div>
       </div>
     </nav>
     

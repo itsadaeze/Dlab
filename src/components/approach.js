@@ -45,6 +45,7 @@ const Approach = () => {
     }, []);
     return (
       <div className="bg-[#060A14] py-8 h-[90vh] md:h-full  lg:h-full ">
+          <div className="  max-w-[1200px] mx-auto py-10">
         <div className="flex flex-col justify-around mx-auto md:flex-row mt-6 px-3 md:mt-[3rem] md:mb-8">
           <div>
             <h1 className="font-orbitron text-[24px] w-full px-4 md:px-0 text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px]">
@@ -63,7 +64,7 @@ const Approach = () => {
           </div>
         </div>
   
-        <div className="relative mt-7 bg-[#9F0FE3] py-6 px-2 mx-3  w-[84%] md:w-[90%]  rounded-2xl overflow-hidden md:mx-auto">
+        <div className="relative mt-7 bg-[#9F0FE3] py-6 px-2 mx-6  w-[84%] md:w-[90%]  rounded-2xl overflow-hidden md:mx-auto">
         <button
           onClick={() => handleArrowClick('left')}
           className="absolute top-1/2 left-3  py-1 px-2 ml-[-1rem] bg-[#333333] rounded-full text-white"
@@ -104,6 +105,7 @@ const Approach = () => {
               />
             ))}
           </div> */}
+        </div>
         </div>
       </div>
     );

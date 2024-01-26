@@ -40,20 +40,9 @@ const ImageSlider = () => {
   };
 
   return (
-    // <div className=''>
-    // <Slider ref={sliderRef} {...settings}>
-    //   {images.map((imageUrl, index) => (
-    //     <div key={index} className='my-4 md:my-7 px-1 '>
-    //       <img
-    //         src={imageUrl}
-    //         alt={`Slide ${index + 3}`}
-    //         className="w-full h-[90px] md:h-[200px] lg:h-[300px] object-cover  rounded-md"
-    //       />
-    //     </div>
-    //   ))}
-    // </Slider>
-    // </div>
+
     <div className='overflow-hidden'>
+     
     <Slider ref={sliderRef} {...settings}>
       {images.map((imageUrl, index) => (
         <div key={index} className='my-4 md:my-7 px-1'>
@@ -65,6 +54,7 @@ const ImageSlider = () => {
         </div>
       ))}
     </Slider>
+
   </div>
   );
 };

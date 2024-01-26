@@ -27,12 +27,13 @@ const Form = () => {
         };
 
     return(
-        <div className="bg-[#F2F2F2] w-full py-[2rem]">
-                <div className="px-[1rem] py-3 md:px-[5rem] md:py-10">
+        <div className="bg-[#F2F2F2] w-full py-[2rem] ">
+            <div className="  max-w-[1200px] px-6 mx-auto py-10">
+                <div className="px-[1rem] py-3  md:py-10">
                     <h3 className="text-[#8D1DE5] text-[12px] md:[14px] lg:text-[24px] ">Share your project idea with us</h3>
                     <h1 className="font-orbitron tracking-wider text-[24px] md:text-[36px] lg:text-[48px]">Let’s work together..</h1>
                 </div>
-    <div className="max-w-md w-full px-4 mx-auto md:w-[80%] md:max-w-3xl md:px-0">
+    <div className="max-w-md w-full px-4 mx-auto  md:max-w-3xl  lg:ml-auto lg:mr-0" >
        <form onSubmit={handleSubmit} className="mt-8 space-y-6">
             <div className="mb-2">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -152,6 +153,7 @@ const Form = () => {
           </button>
         </div>
       </form>
+      </div>
       </div>
         </div>
     )

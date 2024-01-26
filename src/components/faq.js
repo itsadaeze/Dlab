@@ -56,8 +56,8 @@ const FAQ = () => {
 
   return (
     <div className='bg-[#FFF] '>
-
-<h1 className="text-[#333] text-[24px] font-orbitron px-[1rem] mt-[3rem] tracking-wide font-light md:px-[5rem] md:text-[36px] lg:text-[48px]">Frequently Asked <span className="text-[#8D1DE5]">Questions</span></h1>
+ <div className=" max-w-[1200px] mx-auto">
+<h1 className="text-[#333] text-[24px] font-orbitron px-[1rem] mt-[3rem] tracking-wide font-light  md:text-[36px] lg:text-[48px]">Frequently Asked <span className="text-[#8D1DE5]">Questions</span></h1>
    
     <div className="max-w-screen-lg mx-auto mt-4 mb-[3rem] md:mt-10">
 
@@ -83,6 +83,7 @@ const FAQ = () => {
        
       ))}
      
+    </div>
     </div>
     </div>
   );
