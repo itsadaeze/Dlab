@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import backgroundImage from "./../images/hero-bg.svg";
@@ -34,3 +31,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+

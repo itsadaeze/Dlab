@@ -29,8 +29,8 @@ const Form = () => {
     return(
         <div className="bg-[#F2F2F2] w-full py-[2rem]">
                 <div className="px-[1rem] py-3 md:px-[5rem] md:py-10">
-                    <h3 className="text-[#8D1DE5] text-[10px] md:text-lg ">Share your project idea with us</h3>
-                    <h1 className="font-orbitron tracking-wider text-md md:text-2xl">Let’s work together..</h1>
+                    <h3 className="text-[#8D1DE5] text-[12px] md:[14px] lg:text-[24px] ">Share your project idea with us</h3>
+                    <h1 className="font-orbitron tracking-wider text-[24px] md:text-[36px] lg:text-[48px]">Let’s work together..</h1>
                 </div>
     <div className="max-w-md w-full px-4 mx-auto md:w-[80%] md:max-w-3xl md:px-0">
        <form onSubmit={handleSubmit} className="mt-8 space-y-6">

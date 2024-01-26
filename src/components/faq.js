@@ -57,7 +57,7 @@ const FAQ = () => {
   return (
     <div className='bg-[#FFF] '>
 
-<h1 className="text-[#333] text-[1.5rem] font-orbitron px-[1rem] mt-[3rem] tracking-wide font-light md:px-[5rem] md:text-[2rem]">Frequently Asked <span className="text-[#8D1DE5]">Questions</span></h1>
+<h1 className="text-[#333] text-[24px] font-orbitron px-[1rem] mt-[3rem] tracking-wide font-light md:px-[5rem] md:text-[36px] lg:text-[48px]">Frequently Asked <span className="text-[#8D1DE5]">Questions</span></h1>
    
     <div className="max-w-screen-lg mx-auto mt-4 mb-[3rem] md:mt-10">
 
@@ -69,11 +69,11 @@ const FAQ = () => {
             onClick={() => toggleAnswer(index)}
             className="cursor-pointer  p-4  flex justify-between items-center"
           >
-            <div className="font-semibold font-montserrat text-[13px] md:text-base">{faq.question}</div>
+            <div className="font-semibold font-montserrat text-[16px] md:text-[17px] lg:text-[24px]">{faq.question}</div>
             <div className="text-gray-500">{activeIndex === index ? <IoIosArrowRoundUp />: < IoIosArrowRoundDown />}</div>
           </div>
           {activeIndex === index && (
-            <div className=" px-4  text-[#333] font-montserrat text-[12px] w-[90%] md:text-[15px]">{faq.answer}</div>
+            <div className=" px-4  text-[#333] font-montserrat text-[14px] w-[90%] md:text-[14px] lg:text-[20px]">{faq.answer}</div>
           )}
           <div className='px-4'>
           <hr  className='mt-2 bg-[#BDBDBD]'/>

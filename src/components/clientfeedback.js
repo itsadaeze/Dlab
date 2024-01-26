@@ -32,7 +32,7 @@ const ClientFeedback = () => {
         
       ];
     return(
-        <div className="bg-[#F2F2F2] h-[200vh] md:h-[120vh]">
+        <div className="bg-[#F2F2F2] h-[208vh] md:h-[120vh]">
         <h1 className="text-[#333] text-[1.5rem] font-orbitron px-[1rem] py-[1rem] tracking-wide font-light md:text-[3rem] md:px-[5rem] md:py-[3rem]">Clients <span className="text-[#8D1DE5]">Feedback</span></h1>
 
         <div className="flex justify-center items-center overflow-auto ">
@@ -61,12 +61,12 @@ const ClientFeedback = () => {
            
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center  mx-auto px-[1rem]  py-[3rem] space-x-7 md:flex-row md:px-[9rem]">
+      <div className="flex flex-col items-center justify-center  mx-auto px-[0rem]  py-[3rem] space-x-7 md:flex-row md:px-[9rem]">
         <div>
-          <img src={contact} alt="contact" className="w-full md:w-[100rem]"/>
+          <img src={contact} alt="contact" className="w-full md:w-[100rem] px-5 md:px-0"/>
         </div>
         <div className="">
-          <h1 className="font-orbitron text-[1.5rem] mt-6 w-[100%] md:w-[80%]  md:text-[2.5rem] md:mt-0 ">We bridge the gap between <span className="text-[#8D1DE5]">idea</span> and market with innovative designs <span className="text-[#8D1DE5]">seamless functionality </span></h1>
+          <h1 className="font-orbitron font-light text-[#333333] text-[24px] mt-6 w-[100%] md:w-[80%]  md:text-[32px] lg:text-[48px] md:mt-0 ">We bridge the gap between <span className="text-[#8D1DE5]">idea</span> and market with innovative designs <span className="text-[#8D1DE5]">seamless functionality </span></h1>
           <button className="bg-[#8D1DE5]  text-[#FFFFFF] px-6 py-2 rounded-full text-md  mt-5 flex flex-row items-center gap-1 ">Contact Us <span><IoIosArrowRoundForward /></span></button>
         </div>
       </div>

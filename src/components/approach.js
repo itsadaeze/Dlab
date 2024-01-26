@@ -44,8 +44,8 @@ const Approach = () => {
       };
     }, []);
     return (
-      <div className="bg-[#060A14] py-8 h-[90vh] md:h-full ">
-        <div className="flex flex-col justify-around mx-auto md:flex-row mt-6 px-3">
+      <div className="bg-[#060A14] py-8 h-[90vh] md:h-full  lg:h-full ">
+        <div className="flex flex-col justify-around mx-auto md:flex-row mt-6 px-3 md:mt-[3rem] md:mb-8">
           <div>
             <h1 className="font-orbitron text-[24px] w-full px-4 md:px-0 text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px]">
               Design <span className="text-[#0C07EF]">Approach</span>

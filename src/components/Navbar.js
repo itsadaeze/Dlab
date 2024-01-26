@@ -88,7 +88,7 @@ const NavBar = () => {
         </div>
 
         {showMenu && (
-          <div className="lg:hidden fixed flex flex-col inset-y-0 right-7 z-50 bg-[#060A14] mt-[4rem] shadow-lg  w-2/3 h-[35vh] p-4 transform transition-transform duration-10000 ease-in-out">
+          <div className="lg:hidden fixed flex flex-col inset-y-0 right-7 z-50 bg-[#060A14] mt-[4rem] shadow-lg  w-2/3 h-screen p-4 transform transition-transform duration-10000 ease-in-out">
             <a href="#" className="text-white py-2" onClick={closeMenu}>
               About
             </a>
