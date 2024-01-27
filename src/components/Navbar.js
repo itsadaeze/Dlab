@@ -73,20 +73,27 @@ const NavBar = () => {
             </div>
             ) : (
               // Use menu icon when isXIcon is false
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
+              // <svg
+              //   className="h-6 w-6"
+              //   fill="none"
+              //   stroke="currentColor"
+              //   viewBox="0 0 24 24"
+              //   xmlns="http://www.w3.org/2000/svg"
+              // >
+              //   <path
+              //     strokeLinecap="round"
+              //     strokeLinejoin="round"
+              //     strokeWidth="2"
+              //     d="M4 6h16M4 12h16m-7 6h7"
+              //   />
+              // </svg>
+              <div className="w-[98px] h-8 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] justify-center items-center inline-flex">
+                <div className="w-8 h-[7px] flex-col justify-start items-start gap-[3px] inline-flex">
+                    <div className="w-[26px] grow shrink basis-0 border-2 border-white"></div>
+                    <div className="w-[26px] h-[0px] border-2 border-white"></div>
+                </div>
+             <div className="w-[42px] h-[17px] text-white text-sm font-bold font-['Montserrat']">Menu</div>
+            </div>
             )}
           </button>
         </div>
@@ -102,11 +109,11 @@ const NavBar = () => {
             <a href="#" className="text-white text-base mt-[45px] py-2 px-1" onClick={closeMenu}>
               Case Study
             </a>
-           <div className='px-1 w-[80%] mt-[45px]'>
-            <a href="#" className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-2 py-2 rounded-full text-md flex flex-row items-center gap-1" onClick={closeMenu}>
-              Contact Us  <span><IoIosArrowRoundForward /></span>
-            </a>
-            </div>
+            <div className=" flex flex-row items-center w-[176px] md:w-[196px] h-[47px] md:h-[53px]  px-2 border-none mt-7 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">
+            <div className="text-white text-base font-semibold font-['Montserrat']">Contact Us </div>
+            <div><IoIosArrowRoundForward className="text-2xl text-white"/></div>
+          
+        </div>
           </div>
         )}
       </div>

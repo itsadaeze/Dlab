@@ -2,7 +2,7 @@ import React from "react";
 import { MdEmail } from "react-icons/md";
 const Subscribe = () => {
     return(
-        <div className="bg-[#060A14] py-[2rem] font-poppins">
+        <div className="bg-[#060A14] py-10 md:py-20 font-poppins">
              <div className="  max-w-[1200px] mx-auto md:px-4">
             <h1 className="  font-orbitron text-[24px] w-full px-[1rem] text-[#F2F2F2] tracking-wide  md:text-[36px] lg:text-[48px] md:px-0">Feel free to reach out to us via email to explore potential business <span className="text-[#8D1DE5]">collaborations</span> or <span className="text-[#8D1DE5]">career</span> opportunities.</h1>
             <div className="flex flex-col justify-around lg:justify-between text-white mt-[3rem] md:flex-row px-5 md:px-0 ">
@@ -16,7 +16,7 @@ const Subscribe = () => {
                         </div>
                         
                     </div>
-                    <button className="border border-[#8D1DE5] bg-[#8D1DE5] text-[9px] rounded-full ml-[-2rem] px-3 md:px-8 md:text-base md:ml-[-2rem]">Subscribe</button></div>
+                    <button className="border border-none bg-gradient-to-r from-indigo-700 to-purple-600 text-[9px] rounded-full ml-[-2rem] px-3 md:px-8 md:text-base md:ml-[-2rem]">Subscribe</button></div>
                    
                 </div>
                 

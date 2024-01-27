@@ -70,7 +70,7 @@ const FAQ = () => {
             className="cursor-pointer  p-4  flex justify-between items-center"
           >
             <div className="font-semibold font-montserrat text-[16px] md:text-[17px] lg:text-[24px]">{faq.question}</div>
-            <div className="text-gray-500">{activeIndex === index ? <IoIosArrowRoundUp />: < IoIosArrowRoundDown />}</div>
+            <div className="">{activeIndex === index ? <IoIosArrowRoundUp  className="w-[18px] h-[18px] md:w-[21px] md:h-[21px] text-white relative bg-gradient-to-r from-indigo-700 to-purple-600 rounded-full"/>: < IoIosArrowRoundDown className="md:w-[21px] md:h-[21px] relative rounded-full bg-stone-300" />}</div>
           </div>
           {activeIndex === index && (
             <div className=" px-4  text-[#333] font-montserrat text-[14px] tracking-wide leading-[23.10px]  md:leading-relaxed w-[90%] md:text-[14px] lg:text-[20px]">{faq.answer}</div>

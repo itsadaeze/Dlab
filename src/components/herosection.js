@@ -24,10 +24,10 @@ const HeroSection = () => {
           DLabs is a UX design and Development Agency. We craft stunning
           designs, and bring them to life with seamless functionality.
         </p>
-        <div className="px-2 mt-8 md:px-4 lg:px-8 xl:px-0">
-          <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] text-[16px] px-6 py-2 rounded-full text-md flex items-center gap-1">
-            Contact Us <span><IoIosArrowRoundForward /></span>
-          </button>
+        <div className=" flex flex-row items-center w-[176px] md:w-[196px] h-[47px] md:h-[53px] ml-3 md:ml-0 px-2 border-none mt-7 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">
+            <div className="text-white text-base font-semibold font-['Montserrat']">Contact Us </div>
+            <div><IoIosArrowRoundForward className="text-2xl "/></div>
+          
         </div>
         </div>
 

@@ -28,7 +28,7 @@ const Form = () => {
 
     return(
         <div className="bg-[#F2F2F2] w-full py-[2rem] ">
-            <div className="  max-w-[1200px] px-6 mx-auto py-10">
+            <div className="  max-w-[1200px] px-2 mx-auto py-10">
                 <div className="px-[1rem] py-3  md:py-10">
                     <h3 className="text-[#8D1DE5] text-[12px] md:[14px] lg:text-[24px] ">Share your project idea with us</h3>
                     <h1 className="font-orbitron tracking-wider text-[24px] md:text-[36px] lg:text-[48px]">Let’s work together..</h1>
@@ -146,7 +146,7 @@ const Form = () => {
         <div className="">
           <button
             type="submit"
-            className="flex flex-row items-center  bg-blue-500 rounded-full text-white px-4  py-2  hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            className="flex flex-row items-center text-white w-[176px] md:w-[196px] h-[47px] md:h-[53px] ml-3 md:ml-0 px-2 border-none mt-7 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px]"
           >
            Send Message
            <FaLocationArrow />

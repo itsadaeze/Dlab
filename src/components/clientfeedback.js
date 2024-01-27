@@ -41,11 +41,11 @@ const ClientFeedback = () => {
       ];
     return(
         <div className="bg-[#F2F2F2]  ">
-            <div className=" max-w-[1200px] mx-auto px-3 py-[3rem]">
+            <div className=" max-w-[1200px] mx-auto px-2 py-[3rem]">
         <h1 className="text-[#333] text-[1.5rem] font-orbitron px-[1rem] py-[1rem] tracking-wide font-light md:text-[3rem] md:px-0 md:py-[3rem]">Clients <span className="text-[#8D1DE5]">Feedback</span></h1>
 
         <div className="flex justify-center items-center overflow-x-auto ">
-        <div className="flex flex-col flex-nowrap gap-4 px-[1rem]  md:px-0 md:flex-row">
+        <div className="flex flex-col flex-nowrap gap-4 px-5 md:px-0 md:flex-row">
           {cardData.map((card) => (
             <div  key={card.id}  className="max-w-sm  overflow-hidden  bg-white rounded-lg shadow-lg  ">
             
@@ -76,7 +76,11 @@ const ClientFeedback = () => {
         </div>
         <div className="md:w-1/2 ">
           <h1 className="font-orbitron font-light text-[#333333] text-[24px] mt-6  md:text-[32px] lg:text-[48px] md:mt-0 ">We bridge the gap between <span className="text-[#8D1DE5]">idea</span> and market with innovative designs <span className="text-[#8D1DE5]">seamless functionality </span></h1>
-          <button className="bg-[#8D1DE5]  text-[#FFFFFF] px-6 py-2 rounded-full text-md  mt-3 flex flex-row items-center gap-1 ">Contact Us <span><IoIosArrowRoundForward /></span></button>
+          <div className=" flex flex-row items-center w-[176px] md:w-[196px] h-[47px] md:h-[53px]  px-2 border-none mt-5 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">
+            <div className="text-white text-base font-semibold font-['Montserrat']">Contact Us </div>
+            <div><IoIosArrowRoundForward className="text-2xl text-white"/></div>
+          
+        </div>
         </div>
       </div>
       </div>
