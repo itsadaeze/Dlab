@@ -5,7 +5,7 @@ import backgroundImage from "./../images/hero-bg.svg";
 const HeroSection = () => {
   return (
     <div className="  bg-[#060A14]   text-white lg:h-screen ">
-      <div className='max-w-[1200px]   mx-auto  py-10 md:py-0  '>
+      <div className='max-w-[1200px]   mx-auto  py-20 md:py-0  '>
       <div
         className="bg-cover bg-center px-3  bg-opacity-100 md:h-screen  flex  items-center justify-center my-auto  "
         // style={{
