@@ -32,11 +32,18 @@ const ImageSlider = () => {
     dots: false,
     infinite: true,
     speed: 7000,
-    slidesToShow: 2,
+    slidesToShow: 1.5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
-    
+    responsive: [
+      {
+        breakpoint: 768,  
+        settings: {
+          slidesToShow: 3,  
+        },
+      },
+    ],
   };
 
   return (
