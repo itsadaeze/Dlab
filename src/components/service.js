@@ -71,7 +71,7 @@ const Service = () => {
          onMouseLeave={handleCardLeave}
        >
            <h2
-              className={`text-[24px] font-bold text-[#828282]  w-full font-orbitron  md:text-[28px] lg:text-[30px]  ${index === hoveredCard ? 'text-white' : 'text-[#828282]'}`}
+              className={`text-[24px] font-bold text-[#828282] text-center w-full font-orbitron  md:text-[28px] lg:text-[30px]  ${index === hoveredCard ? 'text-white' : 'text-[#828282]'}`}
             >
               {card.title}
             </h2>

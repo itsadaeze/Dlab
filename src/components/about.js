@@ -23,7 +23,7 @@ const About = () => {
         </h1>
 
     
-        <h3 className="text-[#333] font-montserrat text-left tracking-wide md:tracking-wider lg:tracking-widest text-[14px] md:text-[20px] lg:text-[24px] leading-relaxed mt-[1rem] px-[1rem] md:mt-[2rem] md:px-[2rem] " >
+        <h3 className="text-[#333] font-montserrat  tracking-wide md:tracking-wider lg:tracking-widest text-[14px] md:text-[20px] lg:text-[24px] leading-relaxed mt-[1rem] px-[1rem] md:mt-[2rem] md:px-[2rem] " >
           Welcome to our innovative design and development agency! We craft
           stunning visual identities and bring them to life with seamless
           functionality, ensuring your brand stands out in the digital world.
