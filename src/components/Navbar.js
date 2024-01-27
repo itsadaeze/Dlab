@@ -29,14 +29,17 @@ const NavBar = () => {
         </div>
 
         <div className="hidden md:flex  space-x-[5rem] ">
-          <a href="#" className="text-white" >
+          <a href="#about" className="text-white relative group" >
             About
+            <div className="h-3 w-3 rounded-full mx-auto bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
-          <a href="#" className="text-white" >
+          <a href="#service" className="text-white relative group" >
             Services
+            <div className="h-3 w-3 rounded-full mx-auto bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
-          <a href="#" className="text-white" >
+          <a href="#case-study" className="text-white relative group" >
             Case Study
+            <div className="h-3 w-3 rounded-full mx-auto bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
         </div>
 

@@ -40,7 +40,7 @@ const ClientFeedback = () => {
         
       ];
     return(
-        <div className="bg-[#F2F2F2]  ">
+        <div id="case-study" className="bg-[#F2F2F2]  ">
             <div className=" max-w-[1200px] mx-auto px-2 py-[3rem]">
         <h1 className="text-[#333] text-[1.5rem] font-orbitron px-[1rem] py-[1rem] tracking-wide font-light md:text-[3rem] md:px-0 md:py-[3rem]">Clients <span className="text-[#8D1DE5]">Feedback</span></h1>
 

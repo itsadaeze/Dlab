@@ -4,7 +4,7 @@ import backgroundImage from "./../images/about-bg.svg";
 
 const About = () => {
   return (
-    <div
+    <div id="about"
       className="flex  justify-center  text-center   w-full  py-5 md:py-[3rem] mb-0 md:mb-[1rem]  lg:h-fit "
     
     >

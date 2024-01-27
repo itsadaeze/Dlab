@@ -54,7 +54,7 @@ const Service = () => {
   };
 
   return (
-    <div className="flex flex-col bg-[#060A14] ">
+    <div id='service' className="flex flex-col bg-[#060A14] ">
            <div className="  max-w-[1200px] mx-auto py-[4rem]">
         <div>
             <h1 className='text-[24px] px-[1rem] text-[#FFFFFF] font-orbitron  md:text-[36px] lg:text-[48px] lg:mt-7'>Our  <span className='text-[#8D1DE5]'>Services</span></h1>
