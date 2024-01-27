@@ -21,7 +21,7 @@ const ImageSlider = () => {
   const sliderRef = useRef(null);
 
   useEffect(() => {
-    const initialSlideCount = 3;
+    const initialSlideCount = 1;
 
     if (sliderRef.current) {
       sliderRef.current.slickGoTo(initialSlideCount - 1);
@@ -31,11 +31,11 @@ const ImageSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 5000,
-    slidesToShow: 3,
+    speed: 7000,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     
   };
 
@@ -49,7 +49,7 @@ const ImageSlider = () => {
           <img
             src={imageUrl}
             alt={`Slide ${index + 3}`}
-            className="w-full h-[90px] md:h-[200px] lg:h-[300px] object-cover rounded-md"
+            className="w-full h-[100px] md:h-[200px] lg:h-[300px] object-cover rounded-md"
           />
         </div>
       ))}

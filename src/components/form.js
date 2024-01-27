@@ -91,16 +91,16 @@ const Form = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="mt-1  py-2 px-[3rem] border-b-2  border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:[6.5rem]"
+                    className="mt-1  py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm  font-poppins border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:[6.5rem]"
                 >
-                    <option value="" disabled>Select from options</option>
-                    <option value="option1">Product UIUX Design</option>
-                    <option value="option2">Brand Identity Design</option>
-                    <option value="option3">Web Development</option>
-                    <option value="option4">MVP Development</option>
-                    <option value="option4">UX Auditing</option>
-                    <option value="option6">Brand Identity Design</option>
-                    <option value="option6">Others</option>
+                    <option value="" disabled className="text-[#828282] text-sm md:text-sm font-poppins">Select from options</option>
+                    <option value="option1" className="text-[#828282] text-sm md:text-sm font-poppins">Product UIUX Design</option>
+                    <option value="option2" className="text-[#828282] text-sm md:text-sm font-poppins">Brand Identity Design</option>
+                    <option value="option3" className="text-[#828282] text-sm md:text-sm font-poppins">Web Development</option>
+                    <option value="option4" className="text-[#828282] text-sm md:text-sm font-poppins">MVP Development</option>
+                    <option value="option4" className="text-[#828282] text-sm md:text-sm font-poppins">UX Auditing</option>
+                    <option value="option6" className="text-[#828282] text-sm md:text-sm font-poppins">Brand Identity Design</option>
+                    <option value="option6" className="text-[#828282] text-sm md:text-sm font-poppins">Others</option>
                 </select>
             </div>
        
@@ -113,16 +113,16 @@ const Form = () => {
                 name="budget"
                 value={formData.budget}
                 onChange={handleChange}
-                className="mt-1 py-2 px-[3rem] border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:px-[6.5rem]"
+                className="mt-1 py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm font-poppins border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:px-[6.5rem]"
             >
-                <option value="" disabled>Range from options</option>
-                <option value="option1">$1k - $2.5k</option>
-                <option value="option2">$2.5k - $5k</option>
-                <option value="option1">$5k - $10k</option>
-                <option value="option2">$10k - $20k</option>
-                <option value="option1">$20k - $50k</option>
-                <option value="option2">$50k - $100k</option>
-                <option value="option1">$100k and above</option>
+                <option value="" disabled className="text-[#828282] text-sm md:text-sm font-poppins">Range from options</option>
+                <option value="option1" className="text-[#828282] text-sm md:text-smfont-poppins">$1k - $2.5k</option>
+                <option value="option2" className="text-[#828282] text-sm md:text-sm font-poppins">$2.5k - $5k</option>
+                <option value="option1" className="text-[#828282] text-sm md:text-sm font-poppins">$5k - $10k</option>
+                <option value="option2" className="text-[#828282] text-sm md:text-sm font-poppins">$10k - $20k</option>
+                <option value="option1" className="text-[#828282] text-sm md:text-sm font-poppins">$20k - $50k</option>
+                <option value="option2" className="text-[#828282] text-sm md:text-smfont-poppins">$50k - $100k</option>
+                <option value="option1" className="text-[#828282] text-sm md:text-sm font-poppins">$100k and above</option>
                 
             </select>
             

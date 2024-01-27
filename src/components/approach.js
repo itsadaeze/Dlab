@@ -31,11 +31,11 @@ const Approach = () => {
         const newCardsPerPage = window.innerWidth >= 768 ? 3 : 1;
         setCardsPerPage(newCardsPerPage);
   
-        // Adjust startIndex to prevent issues on resize
+    
         setStartIndex((prevStartIndex) => Math.min(prevStartIndex, cardsData.length - newCardsPerPage));
       };
   
-      handleResize(); // Call once to set initial cardsPerPage
+      handleResize(); 
   
       window.addEventListener('resize', handleResize);
   
@@ -45,7 +45,7 @@ const Approach = () => {
     }, []);
     return (
       <div className="bg-[#060A14]  md:h-full  lg:h-full ">
-          <div className="  max-w-[1200px] mx-auto py-10">
+          <div className="  max-w-[1200px] mx-auto py-[3rem]">
         <div className="flex flex-col justify-around mx-auto md:flex-row mt-6 px-3 md:mt-[3rem] md:mb-8">
           <div>
             <h1 className="font-orbitron text-[24px] w-full px-4 md:px-0 text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px]">
@@ -53,7 +53,7 @@ const Approach = () => {
             </h1>
           </div>
           <div className="w-full md:w-1/2">
-            <p className="mb-5 text-[#828282] text-[14px] mt-3 font-montserrat px-4 md:px-0 md:text-[14px] lg:text-[16px] md:mt-0 ">
+            <p className="mb-5 text-[#828282] text-[14px] tracking-wide leading-[23.10px] md:leading-[23.10px] lg:leading-tight mt-3 font-montserrat px-4 md:px-0 md:text-[14px] lg:text-[16px] md:mt-0 ">
               Discover our design and development process - a seamless journey that transforms your vision into a stunning digital reality. From conceptualization to launch, we work closely with you to create a unique, engaging experience tailored to your brand.
             </p>
             <div className="space-x-4  px-4 md:px-0">
@@ -80,7 +80,7 @@ const Approach = () => {
             >
               <div className="flex justify-between">
                 <h3 className="text-lg font-semibold text-[#F2F2F2] font-montserrat">{card.title}</h3>
-                <h3 className="text-lg font-semibold text-[#4F4F4F] font-montserrat">{card.Number}</h3>
+                <h3 className="text-lg font-semibold text-[#4F4F4F] font-montserrat tracking-wide ">{card.Number}</h3>
               </div>
 
               <p className="mt-2 text-[#BDBDBD] font-montserrat text-[8.3px] md:text-[8.3px] lg:text-[14px]">{card.description}</p>

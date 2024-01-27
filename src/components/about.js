@@ -5,7 +5,7 @@ import backgroundImage from "./../images/about-bg.svg";
 const About = () => {
   return (
     <div
-      className="flex  justify-center  text-center   w-full py-10 mb-0 md:mb-[1rem]  lg:h-fit "
+      className="flex  justify-center  text-center   w-full  py-5 md:py-[3rem] mb-0 md:mb-[1rem]  lg:h-fit "
     
     >
       {/* <div
@@ -15,15 +15,15 @@ const About = () => {
           height: "full"
         }}
       /> */}
-           <div className=" max-w-[1200px] mx-auto">
+           <div className=" max-w-[1200px] mx-auto ">
       <div className="relative z-10 w-full max-w-[1200px] mx-auto mt-[1rem]  md:w-[80%] lg:[70%]">
-        <h1 className="font-orbitron px-2  text-[22px]  md:text-[32px] lg:text-[48px] ">
-          User - Centric, <span className="text-[#8D1DE5]">Seamless</span> Functionality, Empowering Business,
-          <span className="text-[#8D1DE5]"> Innovative</span> Approach
+        <h1 className="font-orbitron px-2  text-[22px] tracking-wide md:tracking-wider lg:tracking-widest  md:text-[32px] lg:text-[48px] ">
+          User - Centric, <span className="text-indigo-700">Seamless</span> Functionality, Empowering Business,
+          <span className="text-indigo-700"> Innovative</span> Approach
         </h1>
 
     
-        <h3 className="text-[#333] font-montserrat text-left tracking-wider text-[14px] md:text-[20px] lg:text-[24px] leading-relaxed mt-[1rem] px-[1rem] md:mt-[2rem] md:px-[2rem] " >
+        <h3 className="text-[#333] font-montserrat text-left tracking-wide md:tracking-wider lg:tracking-widest text-[14px] md:text-[20px] lg:text-[24px] leading-relaxed mt-[1rem] px-[1rem] md:mt-[2rem] md:px-[2rem] " >
           Welcome to our innovative design and development agency! We craft
           stunning visual identities and bring them to life with seamless
           functionality, ensuring your brand stands out in the digital world.
