@@ -28,7 +28,7 @@ const About = () => {
           stunning visual identities and bring them to life with seamless
           functionality, ensuring your brand stands out in the digital world.
         </h3>
-        <h3 className="text-[#333] font-montserrat text-left tracking-wider text-[14px] md:text-[20px] lg:text-[24px] leading-relaxed mt-[1rem] px-[1rem] md:mt-[2rem] md:px-[2rem] " >
+        <h3 className="text-[#333] font-montserrat  tracking-wider text-[14px] md:text-[20px] lg:text-[24px] leading-relaxed mt-[1rem] px-[1rem] md:mt-[2rem] md:px-[2rem] " >
           We're a team of creative geniuses and tech wizards who have joined
           forces to bring you the most stunning websites and mind-blowing
           digital experiences. Our portfolio includes work for some of the
@@ -36,7 +36,7 @@ const About = () => {
           it. From sleek, minimalist designs to eye-popping animations, we've
           got the skills and the passion to make your digital dreams come true.
         </h3>
-        <h3 className="text-[#333] font-montserrat text-left tracking-wider text-[14px] md:text-[20px] lg:text-[24px] leading-relaxed mt-[1rem] px-[1rem] md:mt-[2rem] md:px-[2rem] " >
+        <h3 className="text-[#333] font-montserrat  tracking-wider text-[14px] md:text-[20px] lg:text-[24px] leading-relaxed mt-[1rem] px-[1rem] md:mt-[2rem] md:px-[2rem] " >
           So, buckle up and get ready for a wild ride into the world of
           cutting-edge design and development. Let's create something
           extraordinary together.
