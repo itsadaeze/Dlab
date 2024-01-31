@@ -15,6 +15,7 @@ import Approach from './components/approach';
 import Service from './components/service';
 
 import ImageSlider from './components/imageslider';
+import Team from './components/team';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Project />
       <Approach />
       <Service />
+      <Team />
       <ClientFeedback />
       <FAQ />
       <Form />

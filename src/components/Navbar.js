@@ -45,7 +45,7 @@ const NavBar = () => {
 
         <div className="hidden md:block">
           {/* "Contact Us" button visible in desktop view */}
-          <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md flex flex-row items-center gap-1" onClick={closeMenu}>
+          <button className="bg-transparent border-2 border-[#0C07EF]  text-[#FFFFFF] px-6 py-2 rounded-full text-md flex flex-row items-center gap-1 hover:bg-gradient-to-r from-indigo-700 to-purple-600 hover:border-none" onClick={closeMenu}>
             Contact Us <span><IoIosArrowRoundForward /></span>
           </button>
         </div>

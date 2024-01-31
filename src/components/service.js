@@ -19,9 +19,9 @@ const cardData = [
     description: 'Logo Design, Visual Identity Design, Brand Guidelines, Branding Strategy',
   },
   {
-    title: 'Web Development',
+    title: 'Web/Product Development',
     image: service3,
-    description: 'No code Design, Front-end development, Website development.',
+    description: 'Front-end development, Website development, blockchain technology, smart contracts, decentralized applications ',
   },
   {
     title: 'MVP Development',

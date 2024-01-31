@@ -5,16 +5,16 @@ import backgroundImage from "./../images/about-bg.svg";
 const About = () => {
   return (
     <div id="about"
-      className="flex  justify-center  text-center   w-full  py-5 md:py-[3rem] mb-0 md:mb-[1rem]  lg:h-fit "
+      className="relative flex  justify-center  text-center   w-full  py-5 md:py-[3rem] mb-0 md:mb-[1rem]  lg:h-fit "
     
     >
-      {/* <div
+      <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           height: "full"
         }}
-      /> */}
+      />
            <div className=" max-w-[1200px] mx-auto ">
       <div className="relative z-10 w-full max-w-[1200px] mx-auto mt-[1rem]  md:w-[80%] lg:[70%]">
         <h1 className="font-orbitron px-2  text-[22px] tracking-wide md:tracking-wider lg:tracking-widest  md:text-[32px] lg:text-[48px] ">

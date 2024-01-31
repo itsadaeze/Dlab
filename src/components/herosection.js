@@ -4,19 +4,22 @@ import backgroundImage from "./../images/hero-bg.svg";
 
 const HeroSection = () => {
   return (
-    <div className="  bg-[#060A14]   text-white lg:h-screen ">
+    <div 
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      height: "full",
+      width: "100%"
+    }}
+    className="  bg-[#060A14] bg-cover bg-center px-3  bg-opacity-100   text-white lg:h-screen ">
       <div className='max-w-[1200px]   mx-auto  py-[5rem] md:py-0  '>
       <div
-        className="bg-cover bg-center px-3  bg-opacity-100 md:h-screen  flex  items-center justify-center my-auto  "
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-          height: "full",
-        }}
+        className="md:h-screen  flex  items-center justify-center my-auto  "
+        
       >
         <div className=" max-w-[1200px] mx-auto my-auto py-10 ">
           
         
-        <h1 className="text-[32px] md:text-[48px] md:tracking-widest lg:tracking-[3.70px] md:leading-[60px] lg:text-[74px] xl:text-[74px] lg:leading-[103.5px] font-orbitron font-bold w-full px-2 md:px-4 lg:px-8 md:w-[80%]  lg:w-[90%] xl:w-[90%]    xl:px-0 ">
+        <h1 className="text-[32px] md:text-[48px] md:tracking-widest lg:tracking-[3.70px] md:leading-[60px] lg:text-[74px] xl:text-[74px] lg:leading-[103.5px] font-orbitron font-bold w-full px-2 md:px-4 lg:px-8 md:w-[80%]  lg:w-[90%] xl:w-[80%]    xl:px-0 ">
           Transforming <span className="text-indigo-700">Ideas</span> into{" "}
           <span className="text-indigo-700">Digital</span> Reality
         </h1>

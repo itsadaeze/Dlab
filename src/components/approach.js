@@ -1,7 +1,10 @@
 
 
 import React, { useEffect, useState } from 'react';
-import { IoIosArrowRoundForward } from 'react-icons/io';
+import { RiArrowRightSLine } from "react-icons/ri";
+import backgroundImage from "./../images/design-bg.svg";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { RiArrowLeftSLine } from "react-icons/ri";
 
 const cardsData = [
   { title: 'Discovery', description: "This stage, we conduct product and market research, planning to understand the product, competition, and industry trends. This helps to ensure that our design solution is tailored to the client's needs and aligns with their business goals.", Number: '01' },
@@ -44,7 +47,16 @@ const Approach = () => {
       };
     }, []);
     return (
-      <div className="bg-[#060A14]  md:h-full  lg:h-full ">
+      <>
+        <div 
+  >
+      <div 
+            style={{
+              backgroundImage: `url(${backgroundImage})`,
+              height: "full",
+              width: "100%"
+            }}
+             className="bg-[#060A14]  md:h-full  lg:h-full ">
           <div className="  max-w-[1200px] mx-auto py-[3rem]">
         <div className="flex flex-col justify-around mx-auto md:flex-row mt-6 px-3 md:mt-[3rem] md:mb-8">
           <div>
@@ -57,7 +69,7 @@ const Approach = () => {
               Discover our design and development process - a seamless journey that transforms your vision into a stunning digital reality. From conceptualization to launch, we work closely with you to create a unique, engaging experience tailored to your brand.
             </p>
             <div className="space-x-4  px-4 md:px-0">
-              <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md flex flex-row items-center gap-1">
+              <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md flex flex-row items-center gap-1 hover:bg-gradient-to-r from-indigo-700 to-purple-600 hover:border-none">
                 Contact Us <span><IoIosArrowRoundForward /></span>
               </button>
             </div>
@@ -67,16 +79,16 @@ const Approach = () => {
         <div className="relative mt-7 bg-[#9F0FE3] py-6 px-2 mx-6  w-[84%] md:w-[90%]  rounded-2xl overflow-hidden md:mx-auto">
         <button
           onClick={() => handleArrowClick('left')}
-          className="absolute top-1/2 left-3  py-1 px-2 ml-[-1rem] bg-[#333333] rounded-full text-white"
+          className="absolute top-1/2 left-3  py-2 px-2 ml-[-1rem] bg-[#333333] rounded-full text-white focus:bg-gradient-to-r from-indigo-700 to-purple-600 hover:border-none"
         >
-          {'<'}
+         <RiArrowLeftSLine />
         </button>
 
         <div className="flex items-center overflow-hidden">
           {cardsData.slice(startIndex, startIndex + cardsPerPage).map((card, index) => (
             <div
               key={index}
-              className={`w-full md:w-1/${cardsPerPage} p-4 mx-2 bg-[#060A14] shadow-md rounded-md`}
+              className={`w-full md:w-1/${cardsPerPage} p-4 mx-2 bg-[#060A14] shadow-md rounded-md `}
             >
               <div className="flex justify-between">
                 <h3 className="text-lg font-semibold text-[#F2F2F2] font-montserrat">{card.title}</h3>
@@ -90,24 +102,18 @@ const Approach = () => {
 
         <button
           onClick={() => handleArrowClick('right')}
-          className="absolute top-1/2 right-3  py-1 px-2 mr-[-1rem] bg-[#9F0FE3] rounded-full text-white"
+          className="absolute top-1/2 right-3  py-2 px-2 mr-[-1rem] bg-[#333333] rounded-full text-white focus:bg-gradient-to-r from-indigo-700 to-purple-600 hover:border-none"
         >
-          {'>'}
+       <RiArrowRightSLine />
         </button>
 
   
-          {/* <div className="flex items-center justify-center absolute bottom-4 left-0 right-0">
-            {Array.from({ length: Math.ceil(cardsData.length / cardsPerPage) }).map((_, i) => (
-              <div
-                key={i}
-                onClick={() => setStartIndex(i * cardsPerPage)}
-                className={`w-3 h-3 mx-2 bg-[#333333] rounded-full cursor-pointer ${i === startIndex / cardsPerPage ? 'bg-[#9F0FE3]' : ''}`}
-              />
-            ))}
-          </div> */}
+    
         </div>
         </div>
       </div>
+      </div>
+      </>
     );
   };
   

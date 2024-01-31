@@ -4,7 +4,7 @@ import avatar1 from "./../images/avatar1.svg";
 import avatar2 from "./../images/avatar2.svg"
 import avatar3 from "./../images/avatar3.svg"
 
-import contact from "./../images/project1.png"
+import contact from "./../images/client.svg"
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const ClientFeedback = () => {
@@ -70,14 +70,14 @@ const ClientFeedback = () => {
            
         </div>
       </div>
-      <div className="flex flex-col items-center md:items-start  justify-center md:justify-between  mx-auto px-[0rem]  py-[3rem] space-x-7 md:flex-row ">
+      <div className="flex flex-col items-center md:items-start  justify-center md:justify-between  mx-auto px-[0rem]  py-[3rem] space-x-7 md:flex-row md:py-[6rem] ">
         <div className="md:w-1/2 ">
           <img src={contact} alt="contact" className="w-full h-full  px-5 md:px-0"/>
         </div>
         <div className="md:w-1/2 ">
-          <h1 className="font-orbitron font-light text-[#333333] text-[24px] mt-6  md:text-[32px] lg:text-[48px] md:mt-0 ">We bridge the gap between <span className="text-[#8D1DE5]">idea</span> and market with innovative designs <span className="text-[#8D1DE5]">seamless functionality </span></h1>
-          <div className=" flex flex-row items-center w-[176px] md:w-[196px] h-[47px] md:h-[53px]  px-2 border-none mt-5 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">
-            <div className="text-white text-base font-semibold font-['Montserrat']">Contact Us </div>
+          <h1 className="font-orbitron font-normal text-[#333333] text-xl mt-6  md:text-xl lg:text-3xl md:mt-0 xl:leading-relaxed tracking-widest ">Join our Telegram platform for a fun and engaging <span className="text-[#8D1DE5]">learning </span><span className="text-[#8D1DE5]"> experience</span>. Get expert tips, discover exciting <span className="text-[#8D1DE5]">opportunities,</span> and collaborate with our team. Don't miss out – join the adventure today!</h1>
+          <div className=" flex flex-row items-center w-[178px] md:w-[206px] h-[47px] md:h-[53px]   border-none mt-4 md:mt-5 lg:mt-10 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">
+            <div className="text-white text-sm font-semibold font-['Montserrat'] md:text-base">Join Community </div>
             <div><IoIosArrowRoundForward className="text-2xl text-white"/></div>
           
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./../images/logo.svg";
+import logo from "./../images/logo1.svg";
 import { MdFacebook } from "react-icons/md";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="flex flex-col justify-between items-center md:flex-row ">
         <div className="flex flex-col  space-y-2 w-full ml-0 md:w-[30%] ">
           <div className="text-2xl text-[#FFF] px-6 flex flex-row items-center font-montserrat font-bold mb-5 md:px-4 md:mb-[2rem]">
-            <img src={logo} alt="logo" className="mr-2" />
-            Lab
+            <img src={logo} alt="logo" className="mr-2 w-20" />
+           
           </div>
           <h3 className="w-full text-[#F2F2F2] px-6 leading-normal text-[14px] tracking-wider font-montserrat md:px-4 md:text-[14px] lg:text-[16px]">
             We craft stunning visual identities and bring them to life with
@@ -28,17 +28,17 @@ const Footer = () => {
         <div className="text-white w-full px-6 mt-[2rem] font-montserrat tracking-wide md:w-[25%] md:px-0 md:mt-[-1rem]">
           <h1 className="text-xl mb-[1rem] font-bold md:mb-[2rem]">Menu</h1>
           <div  className="">
-            <a href="www.facebook.com" className="block mb-6 text-[14px] md:text-[14px] lg:text-[16px]">
+            <a href="#about" className="block mb-6 text-[14px] md:text-[14px] lg:text-[16px]">
               About
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-6 text-[14px] md:text-[14px] lg:text-[16px]">
+            <a href="#services" className="block mb-6 text-[14px] md:text-[14px] lg:text-[16px]">
               Services
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-6 text-[14px] md:text-[14px] lg:text-[16px]">
+            <a href="#case-study" className="block mb-6 text-[14px] md:text-[14px] lg:text-[16px]">
               Case Study
             </a>
           </div>
@@ -47,32 +47,32 @@ const Footer = () => {
         <div className="text-white w-full px-6 font-montserrat mt-[2rem] tracking-wide md:w-[25%] md:px-0  md:mt-0">
           <h1 className="text-xl  mb-[1rem] font-bold md:mb-[1rem]">Services</h1>
           <div >
-            <a href="www.facebook.com" className="block mb-3 text-[14px] md:text-[14px] lg:text-[16px]">
+            <a href="#" className="block mb-3 text-[14px] md:text-[14px] lg:text-[16px]">
               Product UI/UX Design
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-3 text-[14px] md:text-[14px] lg:text-[16px]">
+            <a href="#" className="block mb-3 text-[14px] md:text-[14px] lg:text-[16px]">
               Brand Identity Design
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-3 text-[14px] md:text-[14px] lg:text-[16px]">
+            <a href="#" className="block mb-3 text-[14px] md:text-[14px] lg:text-[16px]">
               Web Development
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-3 text-[14px] md:text-[14px] lg:text-[16px]">
+            <a href="#" className="block mb-3 text-[14px] md:text-[14px] lg:text-[16px]">
             MVP Development
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-3 text-[14px] md:text-[14px] lg:text-[16px]">
+            <a href="#" className="block mb-3 text-[14px] md:text-[14px] lg:text-[16px]">
             UX Auditing
             </a>
           </div>
           <div>
-            <a href="www.facebook.com" className="block mb-3 text-14px md:text-[14px] lg:text-[16px]">
+            <a href="#" className="block mb-3 text-14px md:text-[14px] lg:text-[16px]">
             No Code Design
             </a>
           </div>
