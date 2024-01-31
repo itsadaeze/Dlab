@@ -91,7 +91,7 @@ const Form = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="mt-1  py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm  font-poppins border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:[6.5rem]"
+                    className="mt-1  py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm  font-poppins border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:px-[6.5rem]"
                 >
                     <option value="" disabled className="text-[#828282] text-sm md:text-sm font-poppins">Select from options</option>
                     <option value="option1" className="text-[#828282] text-sm md:text-sm font-poppins">Product UIUX Design</option>
