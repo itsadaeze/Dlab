@@ -95,7 +95,7 @@ const Approach = () => {
                 <h3 className="text-lg font-semibold text-[#4F4F4F] font-montserrat tracking-wide ">{card.Number}</h3>
               </div>
 
-              <p className="mt-2 text-[#BDBDBD] font-montserrat text-[8.3px] md:text-[8.3px] lg:text-[14px]">{card.description}</p>
+              <p className="mt-2 text-stone-300 font-montserrat text-[8.3px] leading-[13.66px] tracking-wide  md:leading-[23.10px] md:tracking-wider md:text-[8.3px] lg:text-[14px]">{card.description}</p>
             </div>
           ))}
         </div>

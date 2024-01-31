@@ -16,10 +16,10 @@ import team5 from "./../images/team5.svg"
 const cardData = [
   { title: 'Emerie', image: team1, link:"https://www.linkedin.com/in/victor-chiemerie-852357102"},
 
-  { title: 'Gracious', image: team2,  ink:""},
-  { title: 'Nenye', image: team3, ink:"" },
-  { title: 'Evans', image: team4, ink:""},
-  { title: 'Chigbo', image:team5, ink:"" },
+  { title: 'Gracious', image: team2,  link:"https://www.linkedin.com/in/gracious-obeagu-63649b15a"},
+  { title: 'Nenye', image: team3, link:"https://www.linkedin.com/in/chinenye-ibegbunam" },
+  { title: 'Evans', image: team4, link:"https://www.linkedin.com/in/vancube-2"},
+  { title: 'Chigbo', image:team5, link:"https://www.linkedin.com/in/chigbo-ifeanyi-james-571418225/" },
 
 ];
 
