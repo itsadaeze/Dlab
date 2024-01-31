@@ -1,7 +1,7 @@
 
 
 import React, { useState } from 'react';
-import logo from './../images/logo.svg';
+import logo from './../images/logo1.svg';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 
 const NavBar = () => {
@@ -24,22 +24,22 @@ const NavBar = () => {
       <div className='max-w-[1200px] mx-auto '>
       <div className="  flex justify-between items-center">
         <div className="text-2xl md:text-2xl text-[#FFF] flex flex-row items-center">
-          <img src={logo} alt="logo"  width={30}  height={30} className='md:w-10' />
-          Lab
+          <img src={logo} alt="logo"  className='w-[5rem]'/>
+      
         </div>
 
-        <div className="hidden md:flex  space-x-[5rem] ">
+        <div className="hidden md:flex  space-x-[4rem] ">
           <a href="#about" className="text-white relative group" >
             About
-            <div className="h-3 w-3 rounded-full mx-auto bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="h-2 w-2 rounded-full mx-auto bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </a>
           <a href="#service" className="text-white relative group" >
             Services
-            <div className="h-3 w-3 rounded-full mx-auto bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="h-2 w-2 rounded-full mx-auto bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </a>
           <a href="#case-study" className="text-white relative group" >
             Case Study
-            <div className="h-3 w-3 rounded-full mx-auto bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="h-2 w-2 rounded-full mx-auto bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </a>
         </div>
 
@@ -56,40 +56,12 @@ const NavBar = () => {
             className="text-white focus:outline-none focus:text-white"
           >
             {isXIcon ? (
-              // Use X icon when isXIcon is true
-              // <svg
-              //   className="h-6 w-6"
-              //   fill="none"
-              //   stroke="currentColor"
-              //   viewBox="0 0 24 24"
-              //   xmlns="http://www.w3.org/2000/svg"
-              // >
-              //   <path
-              //     strokeLinecap="round"
-              //     strokeLinejoin="round"
-              //     strokeWidth="2"
-              //     d="M6 18L18 6M6 6l12 12"
-              //   />
-              // </svg>
+           
               <div className="w-[78px] h-8 bg-neutral-200 rounded-[100px] justify-center items-center inline-flex">
             <div className="w-[42px] h-[17px] text-gray-950 text-sm font-bold font-['Montserrat']">Close</div>
             </div>
             ) : (
-              // Use menu icon when isXIcon is false
-              // <svg
-              //   className="h-6 w-6"
-              //   fill="none"
-              //   stroke="currentColor"
-              //   viewBox="0 0 24 24"
-              //   xmlns="http://www.w3.org/2000/svg"
-              // >
-              //   <path
-              //     strokeLinecap="round"
-              //     strokeLinejoin="round"
-              //     strokeWidth="2"
-              //     d="M4 6h16M4 12h16m-7 6h7"
-              //   />
-              // </svg>
+       
               <div className="w-[98px] h-8 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] justify-center items-center inline-flex">
                 <div className="w-8 h-[7px] flex-col justify-start items-start gap-[3px] inline-flex">
                     <div className="w-[26px] grow shrink basis-0 border-2 border-white"></div>
