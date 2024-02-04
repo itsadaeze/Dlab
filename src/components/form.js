@@ -117,11 +117,11 @@ const Form = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:px-[18rem]"
+                    className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500"
                     required
                 />
             </div>
-           <div className="flex flex-col items-start space-x-0 md:flex-row md:items-center md:space-x-6 ">
+           <div className="flex flex-col items-start space-x-0 md:flex-row md:items-center  md:space-x-6 ">
                 <div>
                     <label htmlFor="email" className="block text-sm mt-5 font-medium text-gray-700">
                         Company Name
@@ -132,7 +132,7 @@ const Form = () => {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="mt-1  py-1 w-full border-b-2  border-gray-300 bg-transparent  focus:outline-none focus:border-blue-500 px-[6rem]"
+                        className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 px-[6rem]"
                         required
                     />
                 </div>
@@ -147,8 +147,8 @@ const Form = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="mt-1  py-1 w-full border-b-2 border-gray-300 bg-transparent  focus:outline-none focus:border-blue-500 px-[6rem]"
-                        required
+                        className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 px-[6rem]"
+                      required
                     />
                 </div>
             </div>
@@ -200,8 +200,8 @@ const Form = () => {
             
                 </div>
         </div>
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+        {/* <div> */}
+          {/* <label htmlFor="email" className="block text-sm font-medium text-gray-700">
             Project Details
           </label>
           <input
@@ -214,7 +214,22 @@ const Form = () => {
             className="mt-1  py-1 w-full  border-b-2 border-gray-300 bg-transparent  focus:outline-none focus:border-blue-500 md:px-[18rem]"
             required
           />
-        </div>
+        </div> */}
+        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            Project Details
+            </label>
+            <input
+            type="text"
+            id="project"
+            name="project"
+            placeholder="Tell us more about your idea"
+            value={formData.project}
+            onChange={handleChange}
+            className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500"
+            required
+            />
+
+        
         <div className="">
           <button
             type="submit"
