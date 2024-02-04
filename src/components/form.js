@@ -1,30 +1,102 @@
 import React, { useState } from "react";
 import { FaLocationArrow } from "react-icons/fa";
+import emailjs from "emailjs-com";
 
 const Form = () => {
 
 
+        // const [formData, setFormData] = useState({
+        //   name: '',
+        //   email: '',
+        //   company: '',
+        //   project: '', 
+        //   service: '',
+        //   budget: '',
+        // });
+      
+        // const handleChange = (e) => {
+        //   setFormData({
+        //     ...formData,
+        //     [e.target.name]: e.target.value,
+        //   });
+        // };
+      
+        // const handleSubmit = (e) => {
+        //   e.preventDefault();
+        //   // Handle form submission logic here
+        //   console.log('Form submitted:', formData);
+        // };
+
         const [formData, setFormData] = useState({
-          name: '',
-          email: '',
-          company: '',
-          project: '', 
-          service: '',
-          budget: '',
-        });
-      
-        const handleChange = (e) => {
-          setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
+            name: '',
+            email: '',
+            company: '',
+            project: '',
+            service: '',
+            budget: '',
           });
+        
+        //   const handleChange = (e) => {
+        //     setFormData({
+        //       ...formData,
+        //       [e.target.name]: e.target.value,
+        //     });
+        //   };
+
+        const handleChange = (e) => {
+            setFormData((prevFormData) => ({
+              ...prevFormData,
+              [e.target.name]: e.target.value,
+            }));
+          };
+          
+        
+          const handleSubmit = (e) => {
+            e.preventDefault();
+        
+            // Use your Email.js Service ID, Template ID, and User ID
+            const serviceId = 'service_m00478j';
+            const templateId = 'template_99kd9sf';
+            const userId = 'MuE3RTwNiKXKrPVEG';
+        
+            // Prepare the data to send
+            const templateParams = {
+              from_name: formData.name,
+              to_email: 'dyserfcareer@gmail.com',  
+              to_name: 'DLAB', 
+              company: formData.company,
+              email: formData.email,
+              service: formData.service,
+              budget: formData.budget,
+              project: formData.project,
+            
+          
         };
       
-        const handleSubmit = (e) => {
-          e.preventDefault();
-          // Handle form submission logic here
-          console.log('Form submitted:', formData);
-        };
+        console.log('templateParams:', templateParams);
+        
+            // Send the email using Email.js
+            emailjs.send(serviceId, templateId, templateParams, userId)
+              .then((response) => {
+                console.log('Email sent successfully:', response);
+                console.log(formData)
+                resetForm(); 
+                
+              })
+              .catch((error) => {
+                console.error('Error sending email:', error);
+              });
+          };
+          const resetForm = () => {
+            setFormData({
+              name: '',
+              email: '',
+              company: '',
+              project: '',
+              service: '',
+              budget: '',
+            });
+          };
 
     return(
         <div className="bg-[#F2F2F2] w-full py-[2rem] ">
@@ -94,13 +166,13 @@ const Form = () => {
                     className="mt-1  py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm  font-poppins border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:px-[6.5rem]"
                 >
                     <option value="" disabled className="text-[#828282] text-sm md:text-sm font-poppins">Select from options</option>
-                    <option value="option1" className="text-[#828282] text-sm md:text-sm font-poppins">Product UIUX Design</option>
-                    <option value="option2" className="text-[#828282] text-sm md:text-sm font-poppins">Brand Identity Design</option>
-                    <option value="option3" className="text-[#828282] text-sm md:text-sm font-poppins">Web Development</option>
-                    <option value="option4" className="text-[#828282] text-sm md:text-sm font-poppins">MVP Development</option>
-                    <option value="option4" className="text-[#828282] text-sm md:text-sm font-poppins">UX Auditing</option>
-                    <option value="option6" className="text-[#828282] text-sm md:text-sm font-poppins">Brand Identity Design</option>
-                    <option value="option6" className="text-[#828282] text-sm md:text-sm font-poppins">Others</option>
+                    <option value="Product UIUX Design" className="text-[#828282] text-sm md:text-sm font-poppins">Product UIUX Design</option>
+                    <option value="Brand Identity Design" className="text-[#828282] text-sm md:text-sm font-poppins">Brand Identity Design</option>
+                    <option value="Web Development" className="text-[#828282] text-sm md:text-sm font-poppins">Web Development</option>
+                    <option value="MVP Development" className="text-[#828282] text-sm md:text-sm font-poppins">MVP Development</option>
+                    <option value="UX Auditing" className="text-[#828282] text-sm md:text-sm font-poppins">UX Auditing</option>
+                    <option value="Brand Identity Design" className="text-[#828282] text-sm md:text-sm font-poppins">Brand Identity Design</option>
+                    <option value="others" className="text-[#828282] text-sm md:text-sm font-poppins">Others</option>
                 </select>
             </div>
        
@@ -116,13 +188,13 @@ const Form = () => {
                 className="mt-1 py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm font-poppins border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:px-[6.5rem]"
             >
                 <option value="" disabled className="text-[#828282] text-sm md:text-sm font-poppins">Range from options</option>
-                <option value="option1" className="text-[#828282] text-sm md:text-smfont-poppins">$1k - $2.5k</option>
-                <option value="option2" className="text-[#828282] text-sm md:text-sm font-poppins">$2.5k - $5k</option>
-                <option value="option1" className="text-[#828282] text-sm md:text-sm font-poppins">$5k - $10k</option>
-                <option value="option2" className="text-[#828282] text-sm md:text-sm font-poppins">$10k - $20k</option>
-                <option value="option1" className="text-[#828282] text-sm md:text-sm font-poppins">$20k - $50k</option>
-                <option value="option2" className="text-[#828282] text-sm md:text-smfont-poppins">$50k - $100k</option>
-                <option value="option1" className="text-[#828282] text-sm md:text-sm font-poppins">$100k and above</option>
+                <option value="$1k - $2.5k" className="text-[#828282] text-sm md:text-smfont-poppins">$1k - $2.5k</option>
+                <option value="$2.5k - $5k" className="text-[#828282] text-sm md:text-sm font-poppins">$2.5k - $5k</option>
+                <option value="$5k - $10k" className="text-[#828282] text-sm md:text-sm font-poppins">$5k - $10k</option>
+                <option value="$10k - $20k" className="text-[#828282] text-sm md:text-sm font-poppins">$10k - $20k</option>
+                <option value="$20k - $50k" className="text-[#828282] text-sm md:text-sm font-poppins">$20k - $50k</option>
+                <option value="$50k - $100k" className="text-[#828282] text-sm md:text-smfont-poppins">$50k - $100k</option>
+                <option value="$100k and above" className="text-[#828282] text-sm md:text-sm font-poppins">$100k and above</option>
                 
             </select>
             

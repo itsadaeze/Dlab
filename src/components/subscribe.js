@@ -1,8 +1,42 @@
 import React, { useState } from "react";
 import { MdEmail } from "react-icons/md";
-const Subscribe = () => {
+import emailjs from "emailjs-com";
 
+
+const Subscribe = () => {
     const [email, setEmail] = useState('');
+
+    const handleSubscribe = (e) => {
+      e.preventDefault();
+  
+      // Replace 'your_target_email@example.com' with the specific email address for subscriptions
+      const targetEmail = 'adaezeugwu258@gmail.com';
+  
+      const templateParams = {
+        to_email: targetEmail,
+        subscriber_email: email,
+      };
+  
+      // Send the subscription email using Email.js
+      sendSubscription(templateParams);
+      
+      // Clear the input after subscription
+      setEmail('');
+    };
+
+    const sendSubscription = (params) => {
+        const serviceId = 'service_m00478j';
+            const templateId = 'template_sz8155r';
+            const userId = 'MuE3RTwNiKXKrPVEG';
+    
+        emailjs.send(serviceId, templateId, params, userId)
+          .then((response) => {
+            console.log('Subscription email sent successfully:', response);
+          })
+          .catch((error) => {
+            console.error('Error sending subscription email:', error);
+          });
+      };
     return(
         <div className="bg-[#060A14] py-10 md:py-20 font-poppins">
              <div className="  max-w-[1200px] mx-auto md:px-4">
@@ -24,7 +58,7 @@ const Subscribe = () => {
                         </div>
                         
                     </div>
-                    <button className="border border-none bg-gradient-to-r from-indigo-700 to-purple-600 text-[9px] rounded-full ml-[-2rem] px-3 md:px-8 md:text-base md:ml-[-3rem]">Subscribe</button></div>
+                    <button  onClick={handleSubscribe} className="border border-none bg-gradient-to-r from-indigo-700 to-purple-600 text-[9px] rounded-full ml-[-2rem] px-3 md:px-8 md:text-base md:ml-[-3rem]">Subscribe</button></div>
                    
                 </div>
                 
