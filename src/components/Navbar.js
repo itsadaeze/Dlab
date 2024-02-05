@@ -57,7 +57,7 @@ const NavBar = () => {
             {isXIcon ? (
            
               <div className="w-[78px] h-8 bg-neutral-200 rounded-[100px] justify-center items-center inline-flex">
-            <div className="w-[42px] h-[17px] text-gray-950 text-sm font-bold font-['Montserrat']">Close</div>
+            <div className="w-[42px] h-[22px] text-center text-gray-950 text-sm font-bold font-['Montserrat']">Close</div>
             </div>
             ) : (
        
@@ -83,7 +83,7 @@ const NavBar = () => {
             <a href="#" className="text-white text-base mt-[45px] py-2 px-1" onClick={closeMenu}>
               Case Study
             </a>
-            <div className=" flex flex-row items-center w-[176px] md:w-[196px] h-[47px] md:h-[53px]  px-2 border-none mt-7 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">
+            <div className=" flex flex-row items-center w-[176px] md:w-[196px] h-[47px] md:h-[53px]  px-2 border-none mt-[45px] bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">
             <div className="text-white text-base font-semibold font-['Montserrat']">Contact Us </div>
             <div><IoIosArrowRoundForward className="text-2xl text-white"/></div>
           

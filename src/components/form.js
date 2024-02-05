@@ -4,30 +4,7 @@ import emailjs from "emailjs-com";
 
 const Form = () => {
 
-
-        // const [formData, setFormData] = useState({
-        //   name: '',
-        //   email: '',
-        //   company: '',
-        //   project: '', 
-        //   service: '',
-        //   budget: '',
-        // });
-      
-        // const handleChange = (e) => {
-        //   setFormData({
-        //     ...formData,
-        //     [e.target.name]: e.target.value,
-        //   });
-        // };
-      
-        // const handleSubmit = (e) => {
-        //   e.preventDefault();
-        //   // Handle form submission logic here
-        //   console.log('Form submitted:', formData);
-        // };
-
-        const [formData, setFormData] = useState({
+       const [formData, setFormData] = useState({
             name: '',
             email: '',
             company: '',
@@ -36,12 +13,7 @@ const Form = () => {
             budget: '',
           });
         
-        //   const handleChange = (e) => {
-        //     setFormData({
-        //       ...formData,
-        //       [e.target.name]: e.target.value,
-        //     });
-        //   };
+      
 
         const handleChange = (e) => {
             setFormData((prevFormData) => ({
@@ -117,7 +89,7 @@ const Form = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500"
+                    className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none "
                     required
                 />
             </div>
@@ -132,7 +104,7 @@ const Form = () => {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 px-[6rem]"
+                        className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none  px-[6rem]"
                         required
                     />
                 </div>
@@ -147,7 +119,7 @@ const Form = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 px-[6rem]"
+                        className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none  px-[6rem]"
                       required
                     />
                 </div>
@@ -163,7 +135,7 @@ const Form = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="mt-1  py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm  font-poppins border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:px-[6.5rem]"
+                    className="mt-1  py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm  font-poppins border-gray-300 bg-transparent focus:outline-none  md:px-[6.5rem]"
                 >
                     <option value="" disabled className="text-[#828282] text-sm md:text-sm font-poppins">Select from options</option>
                     <option value="Product UIUX Design" className="text-[#828282] text-sm md:text-sm font-poppins">Product UIUX Design</option>
@@ -185,7 +157,7 @@ const Form = () => {
                 name="budget"
                 value={formData.budget}
                 onChange={handleChange}
-                className="mt-1 py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm font-poppins border-gray-300 bg-transparent focus:outline-none focus:border-blue-500 md:px-[6.5rem]"
+                className="mt-1 py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm font-poppins border-gray-300 bg-transparent focus:outline-none md:px-[6.5rem]"
             >
                 <option value="" disabled className="text-[#828282] text-sm md:text-sm font-poppins">Range from options</option>
                 <option value="$1k - $2.5k" className="text-[#828282] text-sm md:text-smfont-poppins">$1k - $2.5k</option>
@@ -200,21 +172,7 @@ const Form = () => {
             
                 </div>
         </div>
-        {/* <div> */}
-          {/* <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-            Project Details
-          </label>
-          <input
-            type="text"
-            id="project"
-            name="project"
-            placeholder="Tell us more about your idea"
-            value={formData.project}
-            onChange={handleChange}
-            className="mt-1  py-1 w-full  border-b-2 border-gray-300 bg-transparent  focus:outline-none focus:border-blue-500 md:px-[18rem]"
-            required
-          />
-        </div> */}
+
         <label htmlFor="email" className="block text-sm font-medium text-gray-700">
             Project Details
             </label>
@@ -225,7 +183,7 @@ const Form = () => {
             placeholder="Tell us more about your idea"
             value={formData.project}
             onChange={handleChange}
-            className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-blue-500"
+            className="mt-1 py-1 w-full border-b-2 border-gray-300 bg-transparent focus:outline-none "
             required
             />
 

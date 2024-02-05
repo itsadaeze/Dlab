@@ -67,7 +67,7 @@ const Approach = () => {
                           <p className="mb-5 text-[#828282] text-[14px] tracking-wide leading-[23.10px] md:leading-[23.10px] lg:leading-tight mt-3 font-montserrat px-4 md:px-0 md:text-[14px] lg:text-[16px] md:mt-0 ">
                               Discover our design and development process - a seamless journey that transforms your vision into a stunning digital reality. From conceptualization to launch, we work closely with you to create a unique, engaging experience tailored to your brand.
                           </p>
-                          <div className="hidden md:block">
+                          <div className="px-3 md:px-0">
                               <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md flex flex-row items-center gap-1 hover:bg-gradient-to-r from-indigo-700 to-purple-600 focus:outline-none">
                                   Contact Us <span><IoIosArrowRoundForward /></span>
                               </button>
@@ -85,11 +85,7 @@ const Approach = () => {
 
                       <div className="flex items-center overflow-hidden">
                           {cardsData.slice(startIndex, startIndex + cardsPerPage).map((card, index) => (
-                              // <div
-                              //     key={index}
-                              //     className={`w-full md:w-1/${cardsPerPage} p-4 mx-2 bg-[#060A14] shadow-md rounded-md `}
-                              //     style={{ height: "250px" }} 
-                              // >
+                
                               <div
                               key={index}
                               className={`w-full h-[180px] md:h-[250px] md:w-1/${cardsPerPage} p-4 mx-2 bg-[#060A14] shadow-md rounded-md `}
