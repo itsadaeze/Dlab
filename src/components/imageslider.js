@@ -57,7 +57,7 @@ const ImageSlider = () => {
           <img
             src={imageUrl}
             alt={`Slide ${index + 3}`}
-            className="w-full h-[130px] md:h-[200px] lg:h-[300px] object-cover rounded-md"
+            className="w-full h-[185px] md:h-[200px] lg:h-[300px] object-cover rounded-md"
           />
         </div>
       ))}

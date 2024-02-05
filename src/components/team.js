@@ -49,9 +49,12 @@ const Team = () => {
             Our design and development agency thrives on a core team with expertise in SAAS, B2B, Edutech, blockchain technology, smart contracts, decentralized applicatio   ns, and user experience design. Their synergy and adaptability enable them to create cutting-edge solutions for clients navigating the evolving world of innovation.
             </p>
             <div className="space-x-4  px-4 md:px-0">
-            <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md flex flex-row items-center gap-1 hover:bg-gradient-to-r from-indigo-700 to-purple-600 focus:outline-none transition-all duration-300" >
+             
+              <button className="bg-transparent border-2 border-[#0C07EF] text-[#FFFFFF] px-6 py-2 rounded-full text-md flex flex-row items-center gap-1 hover:bg-gradient-to-r from-indigo-700 to-purple-600 focus:outline-none transition-all duration-300" >
             Join our Team <span><IoIosArrowRoundForward /></span>
           </button>
+              
+            
             </div>
           </div>
         </div>

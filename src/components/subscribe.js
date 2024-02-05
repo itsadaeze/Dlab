@@ -44,21 +44,21 @@ const Subscribe = () => {
             <div className="flex flex-col justify-around lg:justify-between text-white mt-[3rem] md:flex-row px-5 md:px-0 ">
                 <div className="w-full md:w-[37%] ">
                     <h1 className="text-[#EEEEFC] font-montserrat tracking-wide text-[14px] md:text-[14px] lg:text-[16px]">You can always stay in touch to get events, updates, information and also chat with us by sending us a mail.</h1>
-                    <div className="flex flex-row mt-[1rem] ">
-                         <div className="flex flex-row justify-between border  py-[0]  border-gray-600 rounded-full bg-[#18223F]  md:p-[0.4rem]">
-                        <div className="flex flex-row items-center space-x-0  md:space-x-1 px-2 w-30">
-                         <MdEmail size={30} className=" " />
+                    <div className="flex flex-row mt-[1rem]  w-full md:w-[30%]">
+                         <div className="flex flex-row justify-between border  w-[80%] px-2 border-gray-600 rounded-full bg-[#18223F]  md:p-[0.4rem] md:w-[600%]">
+                        <div className="flex flex-row items-center px-1  md:space-x-1  w-30">
+                         <MdEmail  className="" />
                          <input
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className=" px-2  bg-transparent  focus:outline-none"
+                            className=" text-sm px-2 md:text-base  bg-transparent  focus:outline-none"
                             placeholder="Your Email"
                         />
                         </div>
                         
                     </div>
-                    <button  onClick={handleSubscribe} className="border border-none bg-gradient-to-r from-indigo-700 to-purple-600 text-[9px] rounded-full ml-[-2rem] px-3 md:px-8 md:text-base md:ml-[-3rem]">Subscribe</button></div>
+                    <button  onClick={handleSubscribe} className="border py-3  border-none bg-gradient-to-r from-indigo-700 to-purple-600 text-[12px] rounded-full ml-[-3rem] px-5 md:px-8 md:text-base md:ml-[-3rem] md:py-0">Subscribe</button></div>
                    
                 </div>
                 

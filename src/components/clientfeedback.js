@@ -77,7 +77,7 @@ const ClientFeedback = () => {
         <div className="md:w-1/2 ">
           <h1 className="font-orbitron font-normal text-[#333333] text-xl mt-6  md:text-xl lg:text-3xl md:mt-0 xl:leading-relaxed tracking-widest ">Join our Telegram platform for a fun and engaging <span className="text-[#8D1DE5]">learning </span><span className="text-[#8D1DE5]"> experience</span>. Get expert tips, discover exciting <span className="text-[#8D1DE5]">opportunities,</span> and collaborate with our team. Don't miss out – join the adventure today!</h1>
           <div className=" flex flex-row items-center w-[178px] md:w-[206px] h-[47px] md:h-[53px]   border-none mt-4 md:mt-5 lg:mt-10 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">
-            <div className="text-white text-sm font-semibold font-['Montserrat'] md:text-base">Join Community </div>
+            <div className="text-white text-sm font-semibold font-['Montserrat'] md:text-base"> <a href='https://t.me/Dlab_Community' target='_blank'>Join Community</a> </div>
             <div><IoIosArrowRoundForward className="text-2xl text-white"/></div>
           
         </div>

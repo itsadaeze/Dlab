@@ -124,7 +124,7 @@ const Form = () => {
                     />
                 </div>
             </div>
-           <div className="flex flex-col items-center space-x-0 md:flex-row md:space-x-6">
+           <div className="flex flex-col  space-x-0 md:flex-row md:space-x-6">
             
             <div className="mt-5 md:mt-0">
                 <label htmlFor="option" className="block text-sm font-medium text-gray-700">
@@ -135,7 +135,7 @@ const Form = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="mt-1  py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm  font-poppins border-gray-300 bg-transparent focus:outline-none  md:px-[6.5rem]"
+                    className="mt-1  py-2 w-full border-b-2 text-[#828282] text-sm md:text-sm  font-poppins border-gray-300 bg-transparent focus:outline-none  md:px-[6.5rem]"
                 >
                     <option value="" disabled className="text-[#828282] text-sm md:text-sm font-poppins">Select from options</option>
                     <option value="Product UIUX Design" className="text-[#828282] text-sm md:text-sm font-poppins">Product UIUX Design</option>
@@ -157,7 +157,7 @@ const Form = () => {
                 name="budget"
                 value={formData.budget}
                 onChange={handleChange}
-                className="mt-1 py-2 px-[3rem] border-b-2 text-[#828282] text-sm md:text-sm font-poppins border-gray-300 bg-transparent focus:outline-none md:px-[6.5rem]"
+                className="mt-1 py-2 w-full border-b-2 text-[#828282] text-sm md:text-sm font-poppins border-gray-300 bg-transparent focus:outline-none md:px-[6.5rem]"
             >
                 <option value="" disabled className="text-[#828282] text-sm md:text-sm font-poppins">Range from options</option>
                 <option value="$1k - $2.5k" className="text-[#828282] text-sm md:text-smfont-poppins">$1k - $2.5k</option>

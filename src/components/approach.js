@@ -1,5 +1,4 @@
 
-
 import React, { useEffect, useState } from 'react';
 import { RiArrowRightSLine } from "react-icons/ri";
 import backgroundImage from "./../images/design-bg.svg";
