@@ -22,13 +22,13 @@ const Footer = () => {
             digital world.
           </h3>
           <div className="flex flex-row space-x-4 text-white text-[30px] py-5 px-6 md:px-4">
-            <a href="https://www.instagram.com/dyserf_agency?igsh=OGQ5ZDc2ODk2ZA==">
+            <a href="https://www.instagram.com/dyserf_agency?igsh=OGQ5ZDc2ODk2ZA==" target="_blank">
             <FaInstagramSquare />
             </a>
-           <a href="https://twitter.com/dyserf_agency"> 
+           <a href="https://twitter.com/dyserf_agency" target="_blank"> 
            <FaTwitter />
            </a>
-          <a href="https://t.me/Dlab_Community">
+          <a href="https://t.me/Dlab_Community" target="_blank">
           <FaTelegram />
           </a>
             
