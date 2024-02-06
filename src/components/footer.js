@@ -1,8 +1,10 @@
 import React from "react";
 import logo from "./../images/logo1.svg";
-import { MdFacebook } from "react-icons/md";
+
 import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+
+import { FaTelegram } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -20,9 +22,16 @@ const Footer = () => {
             digital world.
           </h3>
           <div className="flex flex-row space-x-4 text-white text-[30px] py-5 px-6 md:px-4">
-            <MdFacebook />
-            <FaTwitter />
-            <FaLinkedin />
+            <a href="https://www.instagram.com/dyserf_agency?igsh=OGQ5ZDc2ODk2ZA==">
+            <FaInstagramSquare />
+            </a>
+           <a href="https://twitter.com/dyserf_agency"> 
+           <FaTwitter />
+           </a>
+          <a href="https://t.me/Dlab_Community">
+          <FaTelegram />
+          </a>
+            
           </div>
         </div>
         <div className="text-white w-full px-6 mt-[2rem] font-montserrat tracking-wide md:w-[25%] md:px-0 md:mt-[-1rem]">

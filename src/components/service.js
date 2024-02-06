@@ -71,7 +71,7 @@ const Service = () => {
          onMouseLeave={handleCardLeave}
        >
            <h2
-              className={`text-[24px] font-bold text-[#828282] text-center w-full font-orbitron  md:text-[28px] lg:text-[30px]  ${index === hoveredCard ? 'text-white' : 'text-[#828282]'}`}
+              className={`text-[24px] font-bold text-[#828282] text-left md:text-center w-full font-orbitron  md:text-[28px] lg:text-[30px]  ${index === hoveredCard ? 'text-white' : 'text-[#828282]'}`}
             >
               {card.title}
             </h2>
@@ -80,7 +80,7 @@ const Service = () => {
           index === hoveredCard ? ' visible' : ' hidden'
         } `}
              />
-          <p className="mt-2 mx-3 w-full text-center md:text-left text-[#828282] text-[12px] px-5 tracking-wide leading-[17.10px]  md:leading-relaxed font-montserrat  md:text-[14px] lg:text-[16px] md:px-0">{card.description}</p>
+          <p className="mt-2 mx-3 w-full text-left md:text-left text-[#828282] text-[12px] px-0 tracking-wide leading-[17.10px]  md:leading-relaxed font-montserrat  md:text-[14px] lg:text-[16px] md:px-0">{card.description}</p>
 
           
         </div>
