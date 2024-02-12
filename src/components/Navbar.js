@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import logo from './../images/logo1.svg';
 import { IoIosArrowRoundForward } from 'react-icons/io';
+// import Wrapper from './wrapper';
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,7 +20,7 @@ const NavBar = () => {
   };
 
   return (
-    
+    // <Wrapper>
     <nav className="bg-[#060A14] px-[1rem] py-4  w-full md:px-[2rem] lg:px-8 fixed top-0 z-50">
       <div className='max-w-[1200px] mx-auto '>
       <div className="  flex justify-between items-center">
@@ -93,7 +94,7 @@ const NavBar = () => {
       </div>
       </div>
     </nav>
-    
+    // </Wrapper>
   );
 };
 

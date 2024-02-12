@@ -18,6 +18,7 @@ import ImageSlider from './components/imageslider';
 import Team from './components/team';
 
 
+
 function App() {
 
 
@@ -27,10 +28,10 @@ function App() {
       <NavBar/>
       <HeroSection />
       <ImageSlider/>
-  
+   
+        
       <About />
-    
-      <Project />
+     <Project />
       <Approach />
       <Service />
       <Team />
@@ -39,6 +40,7 @@ function App() {
       <Form />
       <Subscribe/>
       <Footer/>
+      
     </div>
   );
 }

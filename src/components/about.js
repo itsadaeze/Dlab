@@ -1,9 +1,11 @@
 
 import React from "react";
+import Wrapper from "./wrapper";
 import backgroundImage from "./../images/about-bg.svg";
 
 const About = () => {
   return (
+    <Wrapper>
     <div id="about"
       className="relative flex  justify-center  text-center   w-full  py-5 md:py-[3rem] mb-0 md:mb-[1rem]  lg:h-fit "
     
@@ -45,6 +47,7 @@ const About = () => {
     
     </div>
     </div>
+    </Wrapper>
   );
 };
 

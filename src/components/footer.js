@@ -5,9 +5,11 @@ import { FaTwitter } from "react-icons/fa";
 
 import { FaTelegram } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import Wrapper from "./wrapper";
 
 const Footer = () => {
   return (
+    <Wrapper>
     <footer className="bg-[#8F04FC] py-[3.6rem] ">
          <div className=" max-w-[1200px] mx-auto py-10">
       <div className="flex flex-col justify-between items-center md:flex-row ">
@@ -89,6 +91,7 @@ const Footer = () => {
       </div>
       </div>
     </footer>
+    </Wrapper>
   );
 };
 

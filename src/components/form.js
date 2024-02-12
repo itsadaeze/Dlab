@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaLocationArrow } from "react-icons/fa";
 import emailjs from "emailjs-com";
+import Wrapper from "./wrapper";
 
 const Form = () => {
   const [showModal, setShowModal] = useState(false);
@@ -88,6 +89,7 @@ const Form = () => {
           }, []);
 
     return(
+      <Wrapper>
         <div className="bg-[#F2F2F2] w-full py-[2rem] ">
             <div className="  max-w-[1200px] px-2 mx-auto py-10">
                 <div className="px-[1rem] py-3  md:py-10">
@@ -256,6 +258,7 @@ const Form = () => {
       </div>
       </div>
         </div>
+        </Wrapper>
     )
 }
 

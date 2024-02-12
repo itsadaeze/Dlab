@@ -11,7 +11,8 @@ import team2 from "./../images/team2.svg"
 import team3 from "./../images/team3.svg"
 import team4 from "./../images/team4.svg"
 import team5 from "./../images/team5.svg"
-// import { IoIosArrowRoundForward } from 'react-icons/io';
+import Wrapper from './wrapper';
+
 
 
 const cardData = [
@@ -27,7 +28,7 @@ const cardData = [
 const Team = () => {
   
     return (
-      <>
+      <Wrapper>
         <div 
   >
       <div 
@@ -65,7 +66,7 @@ const Team = () => {
           <img className="w-full" src={card.image} alt={card.title} />
           <div className="px-6 py-1 md:py-4 flex flex-row items-center space-x-3">
           <div className="text-zinc-500 text-base font-medium font-['Montserrat'] tracking-wide">{card.title}</div>
-            <a href={card.link}  target="_blank"  tclassName="p-2 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px]">
+            <a href={card.link}  target="_blank"  className="p-2 border-[#0C07EF]  bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px]">
               <FaLinkedin className="text-xl text-white" />
             </a>
           </div>
@@ -75,7 +76,7 @@ const Team = () => {
         </div>
       </div>
       </div>
-      </>
+      </Wrapper>
     );
   };
   

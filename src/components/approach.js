@@ -4,6 +4,7 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import backgroundImage from "./../images/design-bg.svg";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { RiArrowLeftSLine } from "react-icons/ri";
+import Wrapper from "./wrapper";
 
 const cardsData = [
   { title: 'Discovery', description: "This stage, we conduct product and market research, planning to understand the product, competition, and industry trends. This helps to ensure that our design solution is tailored to the client's needs and aligns with their business goals.", Number: '01' },
@@ -48,7 +49,7 @@ const Approach = () => {
   }, []);
   
   return (
-      <>
+    <Wrapper>
           <div style={{
               backgroundImage: `url(${backgroundImage})`,
               height: "full",
@@ -109,7 +110,7 @@ const Approach = () => {
                   </div>
               </div>
           </div>
-      </>
+          </Wrapper>
   );
 };
 
