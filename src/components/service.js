@@ -6,7 +6,7 @@ import service3 from "./../images/service3.svg"
 import service4 from "./../images/service4.svg"
 import service5 from "./../images/service5.svg"
 import service6 from "./../images/service7.svg"
-import Wrapper from './wrapper';
+// import Wrapper from './wrapper';
 
 const cardData = [
   {
@@ -55,7 +55,7 @@ const Service = () => {
   };
 
   return (
-    <Wrapper>
+    // <Wrapper>
     <div id='service' className="flex flex-col bg-[#060A14] ">
            <div className="  max-w-[1200px] mx-auto py-[4rem]">
         <div>
@@ -95,7 +95,7 @@ const Service = () => {
     
     </div>
     </div>
-    </Wrapper>
+    // </Wrapper>
   );
 };
 

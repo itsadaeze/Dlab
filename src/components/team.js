@@ -11,7 +11,7 @@ import team2 from "./../images/team2.svg"
 import team3 from "./../images/team3.svg"
 import team4 from "./../images/team4.svg"
 import team5 from "./../images/team5.svg"
-import Wrapper from './wrapper';
+// import Wrapper from './wrapper';
 
 
 
@@ -28,7 +28,7 @@ const cardData = [
 const Team = () => {
   
     return (
-      <Wrapper>
+      // <Wrapper>
         <div 
   >
       <div 
@@ -76,7 +76,7 @@ const Team = () => {
         </div>
       </div>
       </div>
-      </Wrapper>
+      // </Wrapper>
     );
   };
   

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { IoIosArrowRoundUp } from "react-icons/io";
 import { IoIosArrowRoundDown } from "react-icons/io";
-import Wrapper from './wrapper';
+// import Wrapper from './wrapper';
 
 const faqData = [
   {
@@ -56,7 +56,7 @@ const Faq = () => {
   };
 
   return (
-    <Wrapper>
+    // <Wrapper>
     <div className='bg-[#FFF] '>
  <div className=" max-w-[1200px] mx-auto py-10">
 <h1 className="text-[#333] text-[24px] font-orbitron px-[1rem] mt-[3rem] tracking-wide font-light  md:text-[36px] lg:text-[48px]">Frequently Asked <span className="text-[#8D1DE5]">Questions</span></h1>
@@ -88,7 +88,7 @@ const Faq = () => {
     </div>
     </div>
     </div>
-    </Wrapper>
+    // </Wrapper>
   );
 };
 

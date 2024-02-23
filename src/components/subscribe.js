@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { MdEmail } from "react-icons/md";
 import emailjs from "emailjs-com";
-import Wrapper from "./wrapper";
+// import Wrapper from "./wrapper";
 
 const Subscribe = () => {
   const [email, setEmail] = useState('');
@@ -61,7 +61,7 @@ const Subscribe = () => {
   }, []);
 
   return (
-    <Wrapper>
+    // <Wrapper>
     <div className="bg-[#060A14] py-10 md:py-20 font-poppins">
       <div className="max-w-[1200px] mx-auto md:px-4">
         <h1 className="font-orbitron text-[24px] w-full px-[1rem] text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px] md:px-0">Feel free to reach out to us via email to explore potential business <span className="text-[#8D1DE5]">collaborations</span> or <span className="text-[#8D1DE5]">career</span> opportunities.</h1>
@@ -132,7 +132,7 @@ const Subscribe = () => {
         )}
       </div>
     </div>
-    </Wrapper>
+    // </Wrapper>
   );
 }
 

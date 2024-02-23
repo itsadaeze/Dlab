@@ -6,7 +6,7 @@ import project2 from "./../images/project2.svg";
 import project3 from "./../images/project3.svg";
 
 import backgroundImage from "./../images/hero-bg.svg";
-import Wrapper from './wrapper';
+// import Wrapper from './wrapper';
 
 
 const Project = () => {
@@ -20,7 +20,7 @@ const Project = () => {
   ];
 
   return (
-    <Wrapper>
+    // <Wrapper>
     <div
     style={{
       backgroundImage: `url(${backgroundImage})`,
@@ -44,7 +44,7 @@ const Project = () => {
     </div>
     </div>
     </div>
-    </Wrapper>
+    // </Wrapper>
   );
 };
 
