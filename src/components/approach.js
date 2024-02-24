@@ -1,10 +1,12 @@
 
 import React, { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { RiArrowRightSLine } from "react-icons/ri";
 import backgroundImage from "./../images/design-bg.svg";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { RiArrowLeftSLine } from "react-icons/ri";
-// import Wrapper from "./wrapper";
+
 
 const cardsData = [
   { title: 'Discovery', description: "This stage, we conduct product and market research, planning to understand the product, competition, and industry trends. This helps to ensure that our design solution is tailored to the client's needs and aligns with their business goals.", Number: '01' },
@@ -19,6 +21,9 @@ const cardsData = [
 
 
 const Approach = () => {
+    useEffect(() => {
+        AOS.init(); 
+      }, []);
   const [startIndex, setStartIndex] = useState(0);
   const [cardsPerPage, setCardsPerPage] = useState(1); 
 
@@ -59,11 +64,15 @@ const Approach = () => {
               <div className="  max-w-[1200px] mx-auto py-[3rem]">
                   <div className="flex flex-col justify-around mx-auto md:flex-row mt-6 px-3 md:mt-[3rem] md:mb-8">
                       <div>
-                          <h1 className="font-orbitron text-[24px] w-full px-4 md:px-0 text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px]">
+                          <h1 data-aos="zoom-in-right"
+                          data-aos-easing="linear"
+                          data-aos-duration="1500" className="font-orbitron text-[24px] w-full px-4 md:px-0 text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px]">
                               Design <span className="text-[#0C07EF]">Approach</span>
                           </h1>
                       </div>
-                      <div className="w-full md:w-1/2">
+                      <div className="w-full md:w-1/2" data-aos="zoom-in-left"
+                      data-aos-easing="linear"
+                      data-aos-duration="1500">
                           <p className="mb-5 text-[#828282] text-[14px] tracking-wide leading-[23.10px] md:leading-[23.10px] lg:leading-tight mt-3 font-montserrat px-4 md:px-0 md:text-[14px] lg:text-[16px] md:mt-0 ">
                               Discover our design and development process - a seamless journey that transforms your vision into a stunning digital reality. From conceptualization to launch, we work closely with you to create a unique, engaging experience tailored to your brand.
                           </p>
@@ -86,7 +95,9 @@ const Approach = () => {
                       <div className="flex items-center overflow-hidden">
                           {cardsData.slice(startIndex, startIndex + cardsPerPage).map((card, index) => (
                 
-                              <div
+                              <div data-aos="fade-down"
+                              data-aos-easing="linear"
+                              data-aos-duration="1500"
                               key={index}
                               className={`w-full h-[180px] md:h-[250px] md:w-1/${cardsPerPage} p-4 mx-2 bg-[#060A14] shadow-md rounded-md `}
                               // style={{ height: "250px", width: "100%" }}

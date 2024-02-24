@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect  } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import logo from "./../images/logo1.svg";
 
 import { FaTwitter } from "react-icons/fa";
@@ -8,9 +10,14 @@ import { FaInstagramSquare } from "react-icons/fa";
 // import Wrapper from "./wrapper";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init(); 
+  }, []);
   return (
     // <Wrapper>
-    <footer className="bg-[#8F04FC] py-[3.6rem] ">
+    <footer data-aos="zoom-in"
+    data-aos-easing="linear"
+          data-aos-duration="1000"  className="bg-[#8F04FC] py-[3.6rem] ">
          <div className=" max-w-[1200px] mx-auto py-10">
       <div className="flex flex-col justify-between items-center md:flex-row ">
         <div className="flex flex-col  space-y-2 w-full ml-0 md:w-[30%] ">

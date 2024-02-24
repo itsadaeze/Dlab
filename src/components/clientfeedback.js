@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
 import avatar1 from "./../images/avatar1.svg";
 import avatar2 from "./../images/avatar2.svg"
@@ -9,6 +11,9 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 // import Wrapper from "./wrapper";
 
 const ClientFeedback = () => {
+  useEffect(() => {
+    AOS.init(); 
+  }, []);
     const cardData = [
         {
           id: 1,
@@ -44,12 +49,14 @@ const ClientFeedback = () => {
       // <Wrapper>
         <div id="case-study" className="bg-[#F2F2F2]  ">
             <div className=" max-w-[1200px] mx-auto px-2 py-[3rem]">
-        <h1 className="text-[#333] text-[1.5rem] font-orbitron px-[1rem] py-[1rem] tracking-wide font-light md:text-[3rem] md:px-0 md:py-[3rem]">Clients <span className="text-[#8D1DE5]">Feedback</span></h1>
+        <h1  data-aos="fade-up-right" data-aos-easing="linear"
+                      data-aos-duration="1500" className="text-[#333] text-[1.5rem] font-orbitron px-[1rem] py-[1rem] tracking-wide font-light md:text-[3rem] md:px-0 md:py-[3rem]">Clients <span className="text-[#8D1DE5]">Feedback</span></h1>
 
         <div className="flex justify-center items-center overflow-x-auto ">
         <div className="flex flex-col flex-nowrap gap-4 px-5 md:px-0 md:flex-row">
           {cardData.map((card) => (
-            <div  key={card.id}  className="max-w-sm  overflow-hidden  bg-white rounded-lg shadow-lg  ">
+            <div  key={card.id} data-aos="zoom-in" data-aos-easing="linear"
+            data-aos-duration="1500" className="max-w-sm  overflow-hidden  bg-white rounded-lg shadow-lg  ">
             
               <div className="px-6 py-4 ">
                
@@ -73,10 +80,10 @@ const ClientFeedback = () => {
         </div>
       </div>
       <div className="flex flex-col items-center md:items-start  justify-center md:justify-between  mx-auto px-[0rem]  py-[3rem] space-x-7 md:flex-row md:py-[6rem] ">
-        <div className="md:w-1/2 ">
+        <div className="md:w-1/2 "  data-aos="fade-up-right" >
           <img src={contact} alt="contact" className="w-full h-full  px-5 md:px-0"/>
         </div>
-        <div className="md:w-1/2 ">
+        <div className="md:w-1/2 "  data-aos="fade-up-left" >
           <h1 className="font-orbitron font-normal text-[#333333] text-xl mt-6  md:text-xl lg:text-3xl md:mt-0 xl:leading-relaxed tracking-widest ">Join our Telegram platform for a fun and engaging <span className="text-[#8D1DE5]">learning </span><span className="text-[#8D1DE5]"> experience</span>. Get expert tips, discover exciting <span className="text-[#8D1DE5]">opportunities,</span> and collaborate with our team. Don't miss out – join the adventure today!</h1>
           <div className=" flex flex-row items-center w-[178px] md:w-[206px] h-[47px] md:h-[53px]   border-none mt-4 md:mt-5 lg:mt-10 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">
             <div className="text-white text-sm font-semibold font-['Montserrat'] md:text-base"> <a href='https://t.me/Dlab_Community' target='_blank'>Join Community</a> </div>

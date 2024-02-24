@@ -1,14 +1,20 @@
-
-import React from "react";
-// import Wrapper from "./wrapper";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import backgroundImage from "./../images/about-bg.svg";
 
 const About = () => {
+
+  useEffect(() => {
+    AOS.init(); 
+  }, []);
   return (
-    // <Wrapper>
+   
     <div id="about"
       className="relative flex  justify-center  text-center   w-full  py-5 md:py-[3rem] mb-0 md:mb-[1rem]  lg:h-fit "
-    
+    data-aos="fade-up"
+    data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
     >
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -16,6 +22,7 @@ const About = () => {
           backgroundImage: `url(${backgroundImage})`,
           height: "full"
         }}
+        
       />
            <div className=" max-w-[1200px] mx-auto ">
       <div className="relative z-10 w-full max-w-[1200px] mx-auto mt-[1rem]  md:w-[80%] lg:[70%]">
@@ -47,7 +54,7 @@ const About = () => {
     
     </div>
     </div>
-    // </Wrapper>
+ 
   );
 };
 
