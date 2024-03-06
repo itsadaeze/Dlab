@@ -65,11 +65,13 @@ const Service = () => {
            <div className="  max-w-[1200px] mx-auto py-[4rem]">
         <div>
             <h1 data-aos="fade-up-right"  data-aos-easing="linear"
-                      data-aos-duration="700"className='text-[24px] px-[1rem] text-[#FFFFFF] font-orbitron  md:text-[36px] lg:text-[48px] lg:mt-7'>Our  <span className='text-[#8D1DE5]'>Services</span></h1>
+              data-aos-duration="500"className='text-[24px] px-[1rem] text-[#FFFFFF] font-orbitron  md:text-[36px] lg:text-[48px] lg:mt-7'>Our  <span className='text-[#8D1DE5]'>Services</span></h1>
         </div>
       {cardData.map((card, index) => (
        <div key={index} className="group relative mx-0 my-8 px-4 ">
        <div
+       data-aos="fade-up-left"  data-aos-easing="linear"
+       data-aos-duration="1500" 
          className={`border-transparent border py-2 px-[0rem] flex flex-col justify-between items-center md:items-center md:flex-row  cursor-pointer ${
           
             index === hoveredCard ? '  h-fit md:h-fit' : '  h-fit md:h-fit'
@@ -79,9 +81,7 @@ const Service = () => {
          onMouseLeave={handleCardLeave}
        >
            <h2
-           data-aos="fade-up-right" 
-           data-aos-easing="linear"
-                      data-aos-duration="700"
+          
               className={`text-[24px] font-bold text-[#828282] text-left md:text-center w-full font-orbitron  md:text-[28px] lg:text-[30px]  ${index === hoveredCard ? 'text-white' : 'text-[#828282]'}`}
             >
               {card.title}
@@ -91,8 +91,7 @@ const Service = () => {
           index === hoveredCard ? ' visible' : ' hidden'
         } `}
              />
-          <p data-aos="fade-up-left"  data-aos-easing="linear"
-                      data-aos-duration="1500" className="mt-2 mx-3 w-full text-left md:text-left text-[#828282] text-[12px] px-0 tracking-wide leading-[17.10px]  md:leading-relaxed font-montserrat  md:text-[14px] lg:text-[16px] md:px-0">{card.description}</p>
+          <p className="mt-2 mx-3 w-full text-left md:text-left text-[#828282] text-[12px] px-0 tracking-wide leading-[17.10px]  md:leading-relaxed font-montserrat  md:text-[14px] lg:text-[16px] md:px-0">{card.description}</p>
 
           
         </div>
