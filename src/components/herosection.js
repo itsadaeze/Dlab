@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import backgroundImage from "./../images/hero-bg.svg";
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init(); 
+  }, []);
   return (
     <div 
     style={{
@@ -23,12 +28,16 @@ const HeroSection = () => {
           Transforming <span className="text-indigo-700">Ideas</span> into{" "}
           <span className="text-indigo-700">Digital</span> Reality
         </h1>
-        <p className="text-xs md:text-lg text-[#828282] lg:text-[24px] w-full px-2 md:w-[70%]  lg:leading-[35.5px]  md:px-4 lg:px-8 lg:w-2/3 l mt-5 md:mt-9 xl:px-0">
+        <p data-aos="zoom-in"
+           data-aos-easing="linear"
+          data-aos-duration="700"  className="text-xs md:text-lg text-[#828282] lg:text-[24px] w-full px-2 md:w-[70%]  lg:leading-[35.5px]  md:px-4 lg:px-8 lg:w-2/3 l mt-5 md:mt-9 xl:px-0">
           DLabs is a UX design and Development Agency. We craft stunning
           designs, and bring them to life with seamless functionality.
         </p>
         <div className=" flex flex-row items-center w-[176px] md:w-[196px] h-[47px] md:h-[53px] ml-3 md:ml-0 px-2 border-none mt-7 bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">
-            <div className="text-white text-base font-semibold font-['Montserrat']">Contact Us </div>
+            <div  data-aos="zoom-in"
+            data-aos-easing="linear"
+          data-aos-duration="1000"  className="text-white text-base font-semibold font-['Montserrat']">Contact Us </div>
             <div><IoIosArrowRoundForward className="text-2xl "/></div>
           
         </div>

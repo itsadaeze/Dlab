@@ -71,9 +71,9 @@ const Subscribe = () => {
     <div className="bg-[#060A14] py-10 md:py-20 font-poppins">
       <div className="max-w-[1200px] mx-auto md:px-4">
         <h1  data-aos="fade-up-right" data-aos-easing="linear"
-                      data-aos-duration="1500" className="font-orbitron text-[24px] w-full px-[1rem] text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px] md:px-0">Feel free to reach out to us via email to explore potential business <span className="text-[#8D1DE5]">collaborations</span> or <span className="text-[#8D1DE5]">career</span> opportunities.</h1>
+                      data-aos-duration="700" className="font-orbitron text-[24px] w-full px-[1rem] text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px] md:px-0">Feel free to reach out to us via email to explore potential business <span className="text-[#8D1DE5]">collaborations</span> or <span className="text-[#8D1DE5]">career</span> opportunities.</h1>
         <div  data-aos="zoom-in" data-aos-easing="linear"
-                      data-aos-duration="1500" className="flex flex-col justify-around lg:justify-between text-white mt-[3rem] md:flex-row px-5 md:px-0 ">
+                      data-aos-duration="700" className="flex flex-col justify-around lg:justify-between text-white mt-[3rem] md:flex-row px-5 md:px-0 ">
           <div className="w-full md:w-[37%] ">
             <h1 className="text-[#EEEEFC] font-montserrat tracking-wide text-[14px] md:text-[14px] lg:text-[16px]">You can always stay in touch to get events, updates, information and also chat with us by sending us a mail.</h1>
             <div className="flex flex-row mt-[1rem] w-full md:w-[30%]">
@@ -103,7 +103,7 @@ const Subscribe = () => {
         </div>
         {showModal && (
           <div className="fixed z-10 inset-0 overflow-y-auto" data-aos="zoom-in" data-aos-easing="linear"
-          data-aos-duration="1500">
+          data-aos-duration="700">
             <div className="flex flex-col items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
               <div className="fixed inset-0 transition-opacity">
                 <div className="absolute inset-0 bg-gray-500 opacity-75"></div>

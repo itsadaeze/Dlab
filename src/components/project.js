@@ -40,7 +40,7 @@ const Project = () => {
   >
       {cardData.map((card) => (
         <a key={card.id} href={card.link} className="block cursor-pointer" data-aos="fade-up" data-aos-easing="linear"
-        data-aos-duration="1500">
+        data-aos-duration="700">
           <img src={card.imageSrc} alt="Card" className="mb-4 mt-8 w-[100%] px-6 object-cover rounded-md md:w-full md:px-0  transition-transform duration-500 transform hover:scale-105" />
           <p className="text-[#F2F2F2] px-[1.5rem] text-sm lg:text-2xl md:px-0">{card.text}</p>
           <p className="text-[#E0E0E0] px-[1.5rem] md:px-0 text-[8.2px] md:text-[9.43px] text-base">{card.description}</p>

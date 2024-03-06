@@ -66,13 +66,13 @@ const Approach = () => {
                       <div>
                           <h1 data-aos="zoom-in-right"
                           data-aos-easing="linear"
-                          data-aos-duration="1500" className="font-orbitron text-[24px] w-full px-4 md:px-0 text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px]">
+                          data-aos-duration="1000" className="font-orbitron text-[24px] w-full px-4 md:px-0 text-[#F2F2F2] tracking-wide md:text-[36px] lg:text-[48px]">
                               Design <span className="text-[#0C07EF]">Approach</span>
                           </h1>
                       </div>
                       <div className="w-full md:w-1/2" data-aos="zoom-in-left"
                       data-aos-easing="linear"
-                      data-aos-duration="1500">
+                      data-aos-duration="700">
                           <p className="mb-5 text-[#828282] text-[14px] tracking-wide leading-[23.10px] md:leading-[23.10px] lg:leading-tight mt-3 font-montserrat px-4 md:px-0 md:text-[14px] lg:text-[16px] md:mt-0 ">
                               Discover our design and development process - a seamless journey that transforms your vision into a stunning digital reality. From conceptualization to launch, we work closely with you to create a unique, engaging experience tailored to your brand.
                           </p>
@@ -97,7 +97,7 @@ const Approach = () => {
                 
                               <div data-aos="fade-down"
                               data-aos-easing="linear"
-                              data-aos-duration="1500"
+                              data-aos-duration="700"
                               key={index}
                               className={`w-full h-[180px] md:h-[250px] md:w-1/${cardsPerPage} p-4 mx-2 bg-[#060A14] shadow-md rounded-md `}
                               // style={{ height: "250px", width: "100%" }}

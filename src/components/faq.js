@@ -65,7 +65,7 @@ const Faq = () => {
     <div className='bg-[#FFF] '>
  <div className=" max-w-[1200px] mx-auto py-10">
 <h1 data-aos="fade-up-right" data-aos-easing="linear"
-                      data-aos-duration="1500" className="text-[#333] text-[24px] font-orbitron px-[1rem] mt-[3rem] tracking-wide font-light  md:text-[36px] lg:text-[48px]">Frequently Asked <span className="text-[#8D1DE5]">Questions</span></h1>
+                      data-aos-duration="700" className="text-[#333] text-[24px] font-orbitron px-[1rem] mt-[3rem] tracking-wide font-light  md:text-[36px] lg:text-[48px]">Frequently Asked <span className="text-[#8D1DE5]">Questions</span></h1>
    
     <div className="max-w-screen-lg mx-auto mt-4 mb-[3rem] md:mt-10">
 

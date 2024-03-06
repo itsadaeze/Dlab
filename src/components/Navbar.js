@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import logo from './../images/logo1.svg';
 import { IoIosArrowRoundForward } from 'react-icons/io';
-// import Wrapper from './wrapper';
+
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -20,7 +20,7 @@ const NavBar = () => {
   };
 
   return (
-    // <Wrapper>
+
     <nav className="bg-[#060A14] px-[1rem] py-4  w-full md:px-[2rem] lg:px-8 fixed top-0 z-50">
       <div className='max-w-[1200px] mx-auto '>
       <div className="  flex justify-between items-center">
@@ -75,13 +75,13 @@ const NavBar = () => {
 
         {showMenu && (
           <div className="lg:hidden fixed flex flex-col inset-y-0 right-0 z-50 bg-[#060A14] mt-[4rem] shadow-lg w-full h-screen p-4 transform transition-transform duration-2000 ease-in-out">
-            <a href="#" className="text-white text-base py-2 px-2 mt-[40px]" onClick={closeMenu}>
+            <a href="#about" className="text-white text-base py-2 px-2 mt-[40px]" onClick={closeMenu}>
               About
             </a>
-            <a href="#" className="text-white text-base py-2 px-1 mt-[45px]" onClick={closeMenu}>
+            <a href="#services" className="text-white text-base py-2 px-1 mt-[45px]" onClick={closeMenu}>
               Services
             </a>
-            <a href="#" className="text-white text-base mt-[45px] py-2 px-1" onClick={closeMenu}>
+            <a href="#case-study" className="text-white text-base mt-[45px] py-2 px-1" onClick={closeMenu}>
               Case Study
             </a>
             <div className=" flex flex-row items-center w-[176px] md:w-[196px] h-[47px] md:h-[53px]  px-2 border-none mt-[45px] bg-gradient-to-r from-indigo-700 to-purple-600 rounded-[100px] border justify-center gap-[22px] ">

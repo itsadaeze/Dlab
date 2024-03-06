@@ -13,7 +13,7 @@ const About = () => {
     <div id="about"
       className="relative flex  justify-center  text-center   w-full  py-5 md:py-[3rem] mb-0 md:mb-[1rem]  lg:h-fit "
     data-aos="fade-up"
-    data-aos-offset="300"
+    data-aos-offset="100"
      data-aos-easing="ease-in-sine"
     >
       <div

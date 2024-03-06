@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useState, useEffect  } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -65,7 +65,7 @@ const Service = () => {
            <div className="  max-w-[1200px] mx-auto py-[4rem]">
         <div>
             <h1 data-aos="fade-up-right"  data-aos-easing="linear"
-                      data-aos-duration="1500"className='text-[24px] px-[1rem] text-[#FFFFFF] font-orbitron  md:text-[36px] lg:text-[48px] lg:mt-7'>Our  <span className='text-[#8D1DE5]'>Services</span></h1>
+                      data-aos-duration="700"className='text-[24px] px-[1rem] text-[#FFFFFF] font-orbitron  md:text-[36px] lg:text-[48px] lg:mt-7'>Our  <span className='text-[#8D1DE5]'>Services</span></h1>
         </div>
       {cardData.map((card, index) => (
        <div key={index} className="group relative mx-0 my-8 px-4 ">
@@ -81,7 +81,7 @@ const Service = () => {
            <h2
            data-aos="fade-up-right" 
            data-aos-easing="linear"
-                      data-aos-duration="1500"
+                      data-aos-duration="700"
               className={`text-[24px] font-bold text-[#828282] text-left md:text-center w-full font-orbitron  md:text-[28px] lg:text-[30px]  ${index === hoveredCard ? 'text-white' : 'text-[#828282]'}`}
             >
               {card.title}

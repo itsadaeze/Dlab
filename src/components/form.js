@@ -100,13 +100,13 @@ const Form = () => {
             <div className="  max-w-[1200px] px-2 mx-auto py-10">
                 <div className="px-[1rem] py-3  md:py-10">
                     <h3  data-aos="fade-up-right"  data-aos-easing="linear"
-                      data-aos-duration="1500" className="text-[#8D1DE5] text-[12px] md:[14px] lg:text-[24px] ">Share your project idea with us</h3>
+                      data-aos-duration="700" className="text-[#8D1DE5] text-[12px] md:[14px] lg:text-[24px] ">Share your project idea with us</h3>
                     <h1  data-aos="fade-up-right"  data-aos-easing="linear"
-                      data-aos-duration="1500" className="font-orbitron tracking-wider text-[24px] md:text-[36px] lg:text-[48px]">Let’s work together..</h1>
+                      data-aos-duration="700" className="font-orbitron tracking-wider text-[24px] md:text-[36px] lg:text-[48px]">Let’s work together..</h1>
                 </div>
     <div className="max-w-md w-full px-4 mx-auto  md:max-w-3xl  lg:ml-auto lg:mr-0" >
        <form data-aos="zoom-in" data-aos-easing="linear"
-                      data-aos-duration="1500" onSubmit={handleSubmit} className="mt-8 space-y-6">
+                      data-aos-duration="700" onSubmit={handleSubmit} className="mt-8 space-y-6">
             <div className="mb-2">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                     Full Name
@@ -229,7 +229,7 @@ const Form = () => {
       </form>
       {showModal && (
           <div className="fixed z-10 inset-0 overflow-y-auto"  data-aos="zoom-in" data-aos-easing="linear"
-          data-aos-duration="1500">
+          data-aos-duration="1000">
             <div className="flex flex-col items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
               <div className="fixed inset-0 transition-opacity">
                 <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
