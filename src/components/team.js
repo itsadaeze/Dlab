@@ -49,8 +49,9 @@ const Team = () => {
             Meet Core <span className="text-[#0C07EF]">Team</span>
             </h1>
           </div>
-          <div className="w-full md:w-1/2" data-aos="zoom-in-left"  data-aos-easing="linear"
-          data-aos-duration="700">
+          <div className="w-full md:w-1/2"  data-aos="zoom-in" 
+          data-aos-easing="linear"
+                      data-aos-duration="1500">
             <p className="mb-5 text-[#828282] text-[14px] tracking-wide leading-[23.10px] md:leading-[23.10px] lg:leading-tight mt-3 font-montserrat px-4 md:px-0 md:text-[14px] lg:text-[16px] md:mt-0 ">
             Our design and development agency thrives on a core team with expertise in SAAS, B2B, Edutech, blockchain technology, smart contracts, decentralized applicatio   ns, and user experience design. Their synergy and adaptability enable them to create cutting-edge solutions for clients navigating the evolving world of innovation.
             </p>

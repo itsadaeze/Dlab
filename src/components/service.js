@@ -70,8 +70,9 @@ const Service = () => {
       {cardData.map((card, index) => (
        <div key={index} className="group relative mx-0 my-8 px-4 ">
        <div
-       data-aos="fade-up-left"  data-aos-easing="linear"
-       data-aos-duration="1500" 
+       data-aos="zoom-in" 
+       data-aos-easing="linear"
+        data-aos-duration="1500"
          className={`border-transparent border py-2 px-[0rem] flex flex-col justify-between items-center md:items-center md:flex-row  cursor-pointer ${
           
             index === hoveredCard ? '  h-fit md:h-fit' : '  h-fit md:h-fit'

@@ -34,7 +34,7 @@ const Form = () => {
           const handleSubmit = (e) => {
             e.preventDefault();
             setShowModal(true);
-            // Use your Email.js Service ID, Template ID, and User ID
+          
             const serviceId = 'service_m00478j';
             const templateId = 'template_99kd9sf';
             const userId = 'MuE3RTwNiKXKrPVEG';
