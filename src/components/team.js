@@ -9,7 +9,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import team1 from "./../images/team1.svg"
 import team2 from "./../images/team2.svg"
 import team3 from "./../images/team3.svg"
-import team4 from "./../images/team4.svg"
+import team4 from "./../images/Chuksimage.svg"
 import team5 from "./../images/team5.svg"
 
 
@@ -20,7 +20,7 @@ const cardData = [
 
   { title: 'Gracious', image: team2,  link:"https://www.linkedin.com/in/gracious-obeagu-63649b15a"},
   { title: 'Nenye', image: team3, link:"https://www.linkedin.com/in/chinenye-ibegbunam" },
-  { title: 'Evans', image: team4, link:"https://www.linkedin.com/in/vancube-2"},
+  { title: 'Chuks', image: team4, link:"https://www.linkedin.com/in/eze-chukwuemeka-ebubechukwu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
   { title: 'Chigbo', image:team5, link:"https://www.linkedin.com/in/chigbo-ifeanyi-james-571418225/" },
 
 ];
